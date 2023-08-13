@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FruityEva</title>
+
+    <meta name="title" content="Fruity Eva">
+    <meta name="description" content="Helping you to improve your health with a fruit-based vegan diet.">
+    <meta name="keywords" content="fruit, vegan, diet">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="jdluis.com">
+
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <!--Styles-->
+    <link rel="stylesheet" href="../style.css">
+
+    <script src="https://kit.fontawesome.com/3ffbeed2f4.js" crossorigin="anonymous"></script>
+
+    <style>
+        /*Aside Hover Nav*/
+        .ahover {
+            border-bottom: 2px solid #f46f72;
+            width: 0;
+            transition: ease-in;
+        }
+
+        .ahover:hover {
+            width: 80%;
+            transition-duration: 0.3s;
+        }
+
+        /*textAnimate STYLES*/
+        span {
+            opacity: 0;
+            transition: all 4s ease;
+        }
+
+        span.fade {
+            opacity: 1;
+        }
+    </style>
+
+
+</head>
+
+<body class=" bg-gray-50 font-textPrimary p-0 m-0">
+
+ 
+   <!-- FOR MOBILE-->
+   <div class=" z-50 fixed  bg-palette2-one text-palette2-text w-full top-0 ">
+    <div class="flex justify-between mb-4 ">
+        <div class="flex pt-2 flex-col ml-5 justify-start items-left">
+            <a href="http://www.fruityeva.com">
+                <img class="w-full" style="max-width: 280px;" src="../img/logoEn.png" alt="logo fruityeva">
+             </a>
+        </div>
+        <button onclick="switchHidden()" id="switchButtom"><i class="fas fa-2x fa-bars mr-3.5"></i></button>
+    </div>
+    <div id="MobileNavContainer" class="hidden w-screen m-auto bg-gray-200 bg-transparent">
+        <nav class="flex flex-col pt-6  text-2xl pb-8 text-center">
+            <a class=" transition w-screen hover:bg-palette-three hover:text-white" href="http://www.fruityeva.com">Home</a>
+            <li class="cursor-pointer list-none" onmouseover="ver(1)" onmouseout="ocultar(1)"> Products
+                <ul  id="subseccion2" class="m-auto text-lg">
+                    <li> <a class="transition w-screen border-b hover:border-palette-three active:opacity-75"
+                            href="ebook.html">Ebooks</a></li>
+                    <li> <a class="transition w-screen border-b hover:border-palette-three active:opacity-75"
+                            href="recomendation.html">Recomendation</a></li>
+                </ul>
+            </li>
+            
+            <a class="transition w-screen hover:bg-palette-three hover:text-white" href="free.html">Free</a>
+            <a class="transition w-screen hover:bg-palette-three hover:text-white" href="about.html">About</a>
+            <div class="flex justify-center mt-5 gap-4">
+               <a href="https://www.fruityeva.com/de/home"> <img class="flags" src="../img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="40"
+                height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="Flag-of-Germany"></a> 
+                <a href="https://www.fruityeva.com">   <img class="flags" src="../img/US-UK_Flag.svg" aria-hidden="true" role="img" width="40" height="24"
+                preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="US-UK-Flag"></a>
+             
+            </div>
+        </nav>
+    </div>
+</div>
+<!--FOr other devides-->
+<div class="hidden sm:flex justify-evenly flex-row z-50 fixed bg-palette2-one text-palette2-text w-full top-0 ">
+    <div class="flex justify-center items-center pl-5 gap-4">
+      <a href="https://www.fruityeva.com" class="hover:opacity-40">
+        <img class="rounded-full border" src="../img/US-UK_Flag.svg" aria-hidden="true" role="img" width="40"
+        height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="US-UK-Flag">
+      </a> 
+      <a href="https://www.fruityeva.com/de/home" class="hover:opacity-40">
+        <img class="rounded-full border" src="../img/Flag-of-Germany.svg" aria-hidden="true" role="img" width="40"
+        height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64" alt="Flag-of-Germany">
+      </a>
+       
+    </div>
+
+    <div class="flex items-center justify-center ">
+            <a  class=" 2xl:w-full sm:w-4/6 md:w-5/6" href="http://www.fruityeva.com">
+               <img class="w-full" style="max-width: 380px;" src="../img/logoEn.png" alt="logo fruityeva">
+            </a>
+    </div>
+    <nav class="pt-6 sm:mr-3 xl:mr-0 space-x-5 text-lg md:text-xl lg:text-2xl mb-4 text-center">
+        <ul class="flex sm:gap-3 lg:gap-5 text-center m-auto">
+            <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+                    href="https://www.fruityeva.com">Home</a></li>
+            <li class="cursor-pointer" onmouseover="ver(1)" onmouseout="ocultar(1)"> Products
+                <ul  id="subseccion1" class="hidden text-left absolute  text-lg bg-white">
+                    <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+                            href="ebook.html">Ebooks</a></li>
+                    <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+                            href="recomendation.html">Recomendation</a></li>
+                </ul>
+            </li>
+            <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+                    href="free.html">Free</a></li>
+            <li> <a class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+                    href="about.html">About</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+    <!--MAIN CONTAINER-->
+    <section class="mt-32 mb-20 m-auto">
+        <div class="rounded overflow-hidden shadow-md  relative pt-10 m-auto lg:w-2/4 border-4 pb-10">
+
+            <div class="w-3/4 max-w-lg m-auto">
+                <h3 class="text-2xl font-bold lg:text-5xl sm:text-3xl w-full text-center pb-5"> 
+                   Recommendations</h3>
+                   <p class="text-xl lg:text-2xl text-center">I share with you some of the products, food, and books that helped me to level up, create more health and wellbeing and will fast-track your success.</p>
+            </div>
+
+            <div class="w-3/4 max-w-md m-auto swiper mt-10 mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="border grid grid-cols-2 gap-5 ">
+                        <img class="w-full rounded-2xl border-palette2-two shadow-2xl " src="../img/kitrecomm1.webp" alt="raw-bite" />
+                        <img class="w-full rounded-2xl border-palette2-two shadow-2xl " src="../img/kitrecomm2.webp" alt="blender" />
+                    </div>
+            </div>
+
+            <div class="w-3/4 max-w-lg text-center m-auto mt-8 ">
+               <a class="hover:opacity-80 bg-palette-four pr-5 pl-5 p-2 sm:pr-10  sm:pl-10 sm:p-5 shadow-2xl rounded-3xl  border-2" target="_blank" href="https://kit.co/Fruityeva"> <button class="p-4 text-white font-bold text-3xl">Tap Here!</button></a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <footer class=" bg-home2section bg-no-repeat bg-center backdrop-filter backdrop-blur-2xl backdrop-contrast-200 ">
+        <div class="grid grid-cols-1 lg:grid-cols-2  self-center w-full lg:pl-20">
+            
+        <div class="mt-10">
+            <ul class="flex lg:hidden gap-7 mt-2 lg:mt-10 justify-center">
+                <li class="text-social-YouTube hover:opacity-40"><a href="https://www.youtube.com/channel/UCFdSji5trOHyOwu2ue-dZaA" target="_blank"><i class="fab fa-2x fa-youtube"></i></a></li>
+                <li class="text-social-Instagram hover:opacity-40"><a href="https://www.instagram.com/fruityeva/" target="_blank"><i class="fab fa-2x fa-instagram"></i></a></li>
+                <li class="text-black hover:opacity-40"><a href="https://mailchi.mp/a95b3196a58e/fruityeva" target="_blank"><i class="fab fa-2x fa-mailchimp"></i></a></li>
+                <li class="items-center flex hover:opacity-40"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="35" height="20" viewBox="0 0 45 16"><path d="M6.562 7.312L2 11.826V1.788A.995.995 0 0 0 1 .8a.993.993 0 0 0-.999.988v12.42a.99.99 0 0 0 .998.986 1 1 0 0 0 .707-.287l5.575-5.51 5.577 5.512a1.003 1.003 0 0 0 1.413 0 .978.978 0 0 0 0-1.398l-5.575-5.51L14.27 2.49a.978.978 0 0 0 0-1.398 1.008 1.008 0 0 0-1.413 0l-6.27 6.202c-.005 0-.009.004-.012.008l-.013.012zm16.55 7.886a.993.993 0 0 1-1-.987V1.79a.994.994 0 0 1 1-.989c.55 0 .999.443.999.989v12.42a.993.993 0 0 1-1 .987zM36.718 2.779v11.432c0 .545.446.987.998.987.55 0 1-.44 1-.987V2.779h5.282A.995.995 0 0 0 45 1.791a.995.995 0 0 0-1-.989H31.434a.995.995 0 0 0-.998.989c0 .545.447.988.999.988h5.285-.001z"/></svg></a></li>
+            </ul>
+
+            <ul class="hidden lg:flex gap-7 mt-2 lg:mt-10 justify-center">
+                <li class="text-social-YouTube hover:opacity-40"><a href="https://www.youtube.com/channel/UCFdSji5trOHyOwu2ue-dZaA" target="_blank"><i class="fab fa-4x fa-youtube"></i></a></li>
+                <li class="text-social-Instagram hover:opacity-40"><a href="https://www.instagram.com/fruityeva/" target="_blank"><i class="fab fa-4x fa-instagram"></i></a></li>
+                <li class="text-black hover:opacity-40"><a href="https://mailchi.mp/a95b3196a58e/fruityeva" target="_blank"><i class="fab fa-4x fa-mailchimp"></i></a></li>
+                <li class="items-center flex hover:opacity-40"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="65" height="40" viewBox="0 0 45 16"><path d="M6.562 7.312L2 11.826V1.788A.995.995 0 0 0 1 .8a.993.993 0 0 0-.999.988v12.42a.99.99 0 0 0 .998.986 1 1 0 0 0 .707-.287l5.575-5.51 5.577 5.512a1.003 1.003 0 0 0 1.413 0 .978.978 0 0 0 0-1.398l-5.575-5.51L14.27 2.49a.978.978 0 0 0 0-1.398 1.008 1.008 0 0 0-1.413 0l-6.27 6.202c-.005 0-.009.004-.012.008l-.013.012zm16.55 7.886a.993.993 0 0 1-1-.987V1.79a.994.994 0 0 1 1-.989c.55 0 .999.443.999.989v12.42a.993.993 0 0 1-1 .987zM36.718 2.779v11.432c0 .545.446.987.998.987.55 0 1-.44 1-.987V2.779h5.282A.995.995 0 0 0 45 1.791a.995.995 0 0 0-1-.989H31.434a.995.995 0 0 0-.998.989c0 .545.447.988.999.988h5.285-.001z"/></svg></a></li>
+            </ul>
+        <h3 class="text-center font-textPrimary text-white font-bold underline pb-8 text-4xl pt-7">Any questions?
+            <br> Contact me</h3>
+
+            <div class="text-center lg:hidden">
+                <i class="pb-8 fa-3x text-palette-three shadow-lg fas fa-arrow-down"></i>
+            </div>
+            <div class="text-center hidden lg:block">
+                <i class="pb-8 fa-3x text-palette-three shadow-lg fas fa-arrow-right"></i>
+            </div>
+
+         
+        </div>
+                <div
+          class="mt-10 drop-shadow-lg max-w-lg p-3 flex w-full m-auto bg-palette2-six opacity-75 flex-col"
+        >
+          <ul
+            class="flex gap-10 flex-col text-left sm:w-5/6 align-middle m-auto self-center mb-5"
+          >
+            <li class="btn mt-5 bg-palette2-three hover:bg-palette-three">
+              <a href="mailto:evibuchi36@gmail.com"
+                >Email:evibuchi36@gmail.com</a
+              >
+            </li>
+            <li>
+              <a
+                class="btn mt-5 bg-palette2-three hover:bg-palette-three"
+                href="https://www.instagram.com/fruityeva/?hl=es"
+                target="_blank"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- <div class=" mt-10  drop-shadow-lg max-w-lg p-3 flex w-full m-auto bg-palette2-six  opacity-75 flex-col">
+          
+          <form action="../sendmail.php" method="POST" name="contacto" class="flex flex-col text-left sm:w-5/6 align-middle m-auto self-center mb-5">
+        <label for="name">First Name</label>
+        <input class="border border-gray-300 font-bold text-gray-500" required placeholder="Eva" name="name" type="text" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚªº\s]+">
+        <label for="email">Email Address</label>
+        <input class="font-bold border border-gray-300 text-gray-500" placeholder="evibuchi36@gmail.com"
+            name="txtemail" type="email" required>
+            <input type="hidden" name="_next" value="http://www.fruityeva.com/public/thanks"> 
+        <label for="subject">Subject</label>
+        <input class="font-bold border border-gray-300 text-gray-500" placeholder="What's it about?" name="subject" id="subject" type="text" "[A-Za-z0-9ñÑáéíóúÁÉÍÓÚªº()\s]+">
+        <label for="message">Message</label>
+        <textarea class="font-bold border border-gray-300 text-gray-500" required name="msg" id="message" cols="30"
+            rows="5" placeholder="Write you Message" pattern="[A-Za-z0-9ñÑáéíóúÁÉÍÓÚªº()\s]+" ></textarea>
+        <input class="btn mt-5 bg-palette2-three hover:bg-palette-three" type="submit" value="Submit Message">
+    </form>
+        </div> -->
+    </div>
+    <div class="flex flex-wrap justify-evenly mt-5 text-center gap-2 overflow-hidden font-bold bg-black opacity-70">
+        <div class="pl-2 lg:pl-0 flex gap-16  text-palette2 font-extrabold  text-white">
+           <a href="../pdf/DISCLAIMER.pdf">Disclamer</a>
+           <a href="../pdf/PRIVACY POLICY AGREEMENT.pdf">Privacy policy agreement</a>
+           <a href="../pdf/Terms and conditions .pdf">Terms and conditions</a>
+        </div>
+   
+        <h4 class="hover:opacity-70 text-white"><a href="http//www.jdluis.com">Copyright @ 2021 - jdluis.com</a></h4>
+    </div>
+
+
+    </footer>
+
+    <!--SCRIPTS, JS---start---->
+    <script src="../app/textAnimate.js"></script>
+    <script src="../app/showNav.js"></script>
+    <script src="../app/smoothScroll.js"></script>
+    <script src="../app/navdrop.js"></script>
+    <!--SCRIPTS, JS---finish-->
+</body>
+
+</html>

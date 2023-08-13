@@ -1,0 +1,330 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+---
+
+<Layout  title="FruityEva-About">
+
+  <body class="bg-gray-50 font-textPrimary p-0 m-0">
+    <!-- FOR MOBILE-->
+    <div class="z-50 fixed bg-palette2-one text-palette2-text w-full top-0">
+      <div class="flex justify-between mb-4">
+        <div class="flex pt-2 flex-col ml-5 justify-start items-left">
+          <a href="http://www.fruityeva.com">
+            <img
+              class="w-full"
+              style="max-width: 280px"
+              src="../img/logoEn.png"
+              alt="logo fruityeva"
+            />
+          </a>
+        </div>
+        <button onclick="switchHidden()" id="switchButtom">
+          <i class="fas fa-2x fa-bars mr-3.5"></i>
+        </button>
+      </div>
+      <div
+        id="MobileNavContainer"
+        class="hidden w-screen m-auto bg-gray-200 bg-transparent"
+      >
+        <nav class="flex flex-col pt-6 text-2xl pb-8 text-center">
+          <a
+            class="transition w-screen hover:bg-palette-three hover:text-white"
+            href="http://www.fruityeva.com"
+            >Home</a
+          >
+          <li
+            class="cursor-pointer list-none"
+            onmouseover="ver(1)"
+            onmouseout="ocultar(1)"
+          >
+            Products
+            <ul id="subseccion2" class="m-auto text-lg">
+              <li>
+                <a
+                  class="transition w-screen border-b hover:border-palette-three active:opacity-75"
+                  href="ebook.html"
+                  >Ebooks</a
+                >
+              </li>
+              <li>
+                <a
+                  class="transition w-screen border-b hover:border-palette-three active:opacity-75"
+                  href="recommendation.html"
+                  >Recommendations</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <a
+            class="transition w-screen hover:bg-palette-three hover:text-white"
+            href="free.html"
+            >Free</a
+          >
+          <a
+            class="transition w-screen hover:bg-palette-three hover:text-white"
+            href="about.html"
+            >About</a
+          >
+          <div class="flex justify-center mt-5 gap-4">
+            <a href="https://www.fruityeva.com/de/home">
+              <img
+                class="flags"
+                src="../img/Flag-of-Germany.svg"
+                aria-hidden="true"
+                role="img"
+                width="40"
+                height="24"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 64 64"
+                alt="Flag-of-Germany"
+            /></a>
+            <a href="https://www.fruityeva.com">
+              <img
+                class="flags"
+                src="../img/US-UK_Flag.svg"
+                aria-hidden="true"
+                role="img"
+                width="40"
+                height="24"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 64 64"
+                alt="US-UK-Flag"
+            /></a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!--FOr other devides-->
+    <div
+      class="hidden sm:flex justify-evenly flex-row z-50 fixed bg-palette2-one text-palette2-text w-full top-0"
+    >
+      <div class="flex justify-center items-center pl-5 gap-4">
+        <a href="https://www.fruityeva.com" class="hover:opacity-40">
+          <img
+            class="rounded-full border"
+            src="../img/US-UK_Flag.svg"
+            aria-hidden="true"
+            role="img"
+            width="40"
+            height="25"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 64 64"
+            alt="US-UK-Flag"
+          />
+        </a>
+        <a href="https://www.fruityeva.com/de/home" class="hover:opacity-40">
+          <img
+            class="rounded-full border"
+            src="../img/Flag-of-Germany.svg"
+            aria-hidden="true"
+            role="img"
+            width="40"
+            height="25"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 64 64"
+            alt="Flag-of-Germany"
+          />
+        </a>
+      </div>
+
+      <div class="flex items-center justify-center">
+        <a class="2xl:w-full sm:w-4/6 md:w-5/6" href="http://www.fruityeva.com">
+          <img
+            class="w-full"
+            style="max-width: 380px"
+            src="../img/logoEn.png"
+            alt="logo fruityeva"
+          />
+        </a>
+      </div>
+      <nav
+        class="pt-6 sm:mr-3 xl:mr-0 space-x-5 text-lg md:text-xl lg:text-2xl mb-4 text-center"
+      >
+        <ul class="flex sm:gap-3 lg:gap-5 text-center m-auto">
+          <li>
+            <a
+              class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+              href="http://www.fruityeva.com"
+              >Home</a
+            >
+          </li>
+          <li
+            class="cursor-pointer"
+            onmouseover="ver(1)"
+            onmouseout="ocultar(1)"
+          >
+            Products
+            <ul
+              id="subseccion1"
+              class="hidden text-left absolute text-lg bg-white"
+            >
+              <li>
+                <a
+                  class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+                  href="ebook.html"
+                  >Ebooks</a
+                >
+              </li>
+              <li>
+                <a
+                  class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+                  href="recommendation.html"
+                  >Recommendations</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+              href="free.html"
+              >Free</a
+            >
+          </li>
+          <li>
+            <a
+              class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
+              href="about.html"
+              >About</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--MAIN  CONTAINER start-->
+
+    <div
+      class="grid grid-cols-1 items-center w-5/6 m-auto lg:grid-cols-2 2xl:p-10"
+    >
+      <div class="m-10 ml-auto h-auto mr-auto w-4/6 sm:w-3/6 mt-32">
+        <img
+          class="w-full m-auto border shadow-2xl"
+          src="../img/author/nice.jpg"
+          alt="FruityEva"
+        />
+      </div>
+
+      <div class="lg:mt-20 lg:ml-10 w-full lg:w-4/6 ml-auto mr-auto">
+        <h2
+          class="pt-20 text-5xl font-bold border-b-2 w-5/6 2xl:3/6 border-palette2-three mb-6"
+        >
+          About Me
+        </h2>
+        <h4 class="text-palette2-text text-center text-2xl">
+          "If you want to create the life you are dreaming of; you are at the
+          perfect place!".
+        </h4>
+        <br />
+        <p>
+          Many years ago, I was struggling with eating disorders. I was
+          searching for endless information and different diets to help me
+          regain my happiness and wellbeing.
+        </p>
+        <br />
+        <h4 class="text-palette2-text text-center text-2xl">
+          I was done with pretending and struggling!
+        </h4>
+        <br />
+        <p>
+          Done with following the accepted and expected path or hoping and
+          wishing that one day my life would be different. I knew I was meant to
+          thrive and be excited when waking up in the morning because I enjoyed
+          life.
+        </p>
+        <br />
+        <h4 class="text-palette2-text text-center text-2xl">
+          "I wanted to say „YES!“ to my dreams!"
+        </h4>
+        <br />
+      </div>
+    </div>
+    <div class="m-auto text-center">
+      <i class="fas fa-4x text-palette-three fa-caret-down"></i>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 p-10 lg:p-20 items-center">
+      <div class="p-4 w-full lg:w-4/6 ml-auto mr-auto">
+        <h2
+          class="text-5xl font-bold border-b-2 w-5/6 lg:w-3/6 border-palette2-three mb-6"
+        ></h2>
+        <p>
+          The journey of starting a vegan and later a fruit-based lifestyle has
+          transformed my whole life (relationships, money, and the countries I
+          live in). It has allowed me to be my authentic self and step into my
+          power. <br />
+          I started to feel good about myself and started to face the fears that
+          had been holding me back for too long.
+        </p>
+        <br />
+        <h4 class="text-palette2-text text-center text-2xl">
+          "I’m now free to create the life I am meant to be living."
+        </h4>
+        <br />
+        <p>
+          I see how people’s lives and health transforms after going fruit-based
+          vegan and it is truly astonishing. Clearer skin, weight loss,
+          happiness more maturity and balance, better relationships, more
+          traveling, and feeling more confident in who they are are just some of
+          the effects that a fruit-based vegan lifestyle can create.
+        </p>
+        <br />
+        <h4 class="text-palette2-text text-center text-2xl">
+          "This is possible for you too! And I’m going to show you how."
+        </h4>
+        <br />
+      </div>
+
+      <div class="lg:m-5 m-auto w-full sm:w-3/6 lg:w-4/6 border-2 shadow-2xl">
+        <img
+          class="w-full"
+          src="../img/author/evacomputer.jpg"
+          alt="FruityEva"
+        />
+      </div>
+    </div>
+
+    <div class="m-auto text-center">
+      <i class="fas fa-4x text-palette-three fa-caret-down"></i>
+    </div>
+
+    <div
+      class="grid grid-cols-1 lg:grid-cols-2 gap-5 w-5/6 lg:w-4/6 m-auto text-cente"
+    >
+      <div class="hidden lg:block m-auto lg:w-5/6 text-center p-5 self-end">
+        <img
+          class="border-2 shadow-2xl w-full"
+          src="../img/aboutFruit.jpeg"
+          alt="Papaya Fruit"
+        />
+      </div>
+      <ul
+        class="flex border shadow-xl m-1 border-palette2-three flex-col gap-2 text-left text-xl p-5 mb-5 leading-5 mt-10"
+      >
+        <h3 class="text-3xl pb-10 underline">5 Facts About Me</h3>
+        <li class="pb-5">
+          <p class="font-bold">1. What’s my zodiac sign?</p>
+          Gemelli
+        </li>
+        <li class="pb-5">
+          <p class="font-bold">2. How would I describe myself?</p>
+          Funny, kind, determined
+        </li>
+        <li class="pb-5">
+          <p class="font-bold">3. My favorite song?</p>
+          Circles by Post Malone
+        </li>
+        <li class="pb-5">
+          <p class="font-bold">4. What is my favorite hobby?</p>
+          Dancing
+        </li>
+        <li class="pb-5">
+          <p class="font-bold">5. Most important message?</p>
+          Go fruit-based vegan.
+        </li>
+      </ul>
+    </div>
+    <!--MAIN  CONTAINER finish-->
+  </body>
