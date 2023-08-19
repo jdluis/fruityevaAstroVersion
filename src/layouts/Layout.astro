@@ -1,4 +1,7 @@
 --- 
+import Nav from '../components/Nav.astro';
+import {ver, ocultar} from "../app/navdrop"
+
 interface Props {
 	title: string;
 }
@@ -37,11 +40,11 @@ const { title } = Astro.props;
       gtag("config", "G-6H5PT54ZXJ");
     </script>
 
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
     <!--Styles-->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/src/style.css"/>
 
     <script
       src="https://kit.fontawesome.com/3ffbeed2f4.js"
@@ -73,193 +76,7 @@ const { title } = Astro.props;
 		</style>
 	</head>
 	<body>
-		 <!-- FOR MOBILE-->
-		 <div class="z-50 fixed bg-palette2-one text-palette2-text w-full top-0">
-			<div class="flex justify-between mb-4">
-			  <div class="flex pt-2 flex-col ml-5 justify-start items-left">
-				<a href="/">
-				  <img
-					class="w-full"
-					style="max-width: 280px"
-					src="img/logoEn.png"
-					alt="logo fruityeva"
-				  />
-				</a>
-			  </div>
-			  <button onclick="switchHidden()" id="switchButtom">
-				<i class="fas fa-2x fa-bars mr-3.5"></i>
-			  </button>
-			</div>
-			<div
-			  id="MobileNavContainer"
-			  class="hidden w-screen m-auto bg-gray-200 bg-transparent"
-			>
-			  <nav class="flex flex-col pt-6 text-2xl pb-8 text-center">
-				<a
-				  class="transition w-screen hover:bg-palette-three hover:text-white"
-				  href="/"
-				  >Home</a
-				>
-				<li
-				  class="cursor-pointer list-none"
-				  onmouseover="ver(1)"
-				  onmouseout="ocultar(1)"
-				>
-				  Products
-				  <ul id="subseccion2" class="m-auto text-lg">
-					<li>
-					  <a
-						class="transition w-screen border-b hover:border-palette-three active:opacity-75"
-						href="en/ebook"
-						>Ebooks</a
-					  >
-					</li>
-					<li>
-					  <a
-						class="transition w-screen border-b hover:border-palette-three active:opacity-75"
-						href="en/recommendation"
-						>Recommendations</a
-					  >
-					</li>
-				  </ul>
-				</li>
-	  
-				<a
-				  class="transition w-screen hover:bg-palette-three hover:text-white"
-				  href="en/free"
-				  >Free</a
-				>
-				<a
-				  class="transition w-screen hover:bg-palette-three hover:text-white"
-				  href="en/about"
-				  >About</a
-				>
-				<div class="flex justify-center mt-5 gap-4">
-				  <a href="de/home">
-					<img
-					  class="flags"
-					  src="img/Flag-of-Germany.svg"
-					  aria-hidden="true"
-					  role="img"
-					  width="40"
-					  height="24"
-					  preserveAspectRatio="xMidYMid meet"
-					  viewBox="0 0 64 64"
-					  alt="Flag-of-Germany"
-				  /></a>
-				  <a href="/">
-					<img
-					  class="flags"
-					  src="img/US-UK_Flag.svg"
-					  aria-hidden="true"
-					  role="img"
-					  width="40"
-					  height="24"
-					  preserveAspectRatio="xMidYMid meet"
-					  viewBox="0 0 64 64"
-					  alt="US-UK-Flag"
-				  /></a>
-				</div>
-			  </nav>
-			</div>
-		  </div>
-		  <!--FOr other devides-->
-		  <div
-			class="hidden sm:flex justify-evenly flex-row z-50 fixed bg-palette2-one text-palette2-text w-full top-0"
-		  >
-			<div class="flex justify-center items-center pl-5 gap-4">
-			  <a href="/" class="hover:opacity-40">
-				<img
-				  class="rounded-full border"
-				  src="img/US-UK_Flag.svg"
-				  aria-hidden="true"
-				  role="img"
-				  width="40"
-				  height="25"
-				  preserveAspectRatio="xMidYMid meet"
-				  viewBox="0 0 64 64"
-				  alt="US-UK-Flag"
-				/>
-			  </a>
-			  <a href="de/home" class="hover:opacity-40">
-				<img
-				  class="rounded-full border"
-				  src="img/Flag-of-Germany.svg"
-				  aria-hidden="true"
-				  role="img"
-				  width="40"
-				  height="25"
-				  preserveAspectRatio="xMidYMid meet"
-				  viewBox="0 0 64 64"
-				  alt="Flag-of-Germany"
-				/>
-			  </a>
-			</div>
-	  
-			<div class="flex items-center justify-center">
-			  <a class="2xl:w-full h-full sm:w-4/6 md:w-5/6" href="/">
-				<img
-				  class="w-full"
-				  style="max-width: 380px"
-				  src="img/logoEn.png"
-				  alt="logo fruityeva"
-				/>
-			  </a>
-			</div>
-			<nav
-			  class="pt-6 sm:mr-3 xl:mr-0 space-x-5 text-lg md:text-xl lg:text-2xl mb-4 text-center"
-			>
-			  <ul class="flex sm:gap-3 lg:gap-5 text-center m-auto">
-				<li>
-				  <a
-					class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
-					href="/"
-					>Home</a
-				  >
-				</li>
-				<li
-				  class="cursor-pointer"
-				  onmouseover="ver(1)"
-				  onmouseout="ocultar(1)"
-				>
-				  Products
-				  <ul
-					id="subseccion1"
-					class="text-left absolute hidden text-lg bg-white"
-				  >
-					<li>
-					  <a
-						class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
-						href="en/ebook"
-						>Ebooks</a
-					  >
-					</li>
-					<li>
-					  <a
-						class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
-						href="en/recommendation"
-						>Recommendations</a
-					  >
-					</li>
-				  </ul>
-				</li>
-				<li>
-				  <a
-					class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
-					href="en/free"
-					>Free</a
-				  >
-				</li>
-				<li>
-				  <a
-					class="transition w-screen border-b-2 hover:border-palette-three active:opacity-75"
-					href="en/about"
-					>About</a
-				  >
-				</li>
-			  </ul>
-			</nav>
-		  </div>
+		 <Nav />
 		<slot />
 
 		
