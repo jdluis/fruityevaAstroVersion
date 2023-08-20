@@ -1,442 +1,184 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FruityEva</title>
+---
+import Layout from "../../layouts/Layout.astro";
+---
 
-    <meta name="title" content="Fruity Eva" />
-    <meta
-      name="description"
-      content="Helping you to improve your health with a fruit-based vegan diet."
-    />
-    <meta name="keywords" content="fruit, vegan, diet" />
-    <meta name="robots" content="index, follow" />
-    <meta name="language" content="English" />
-    <meta name="author" content="jdluis.com" />
+<Layout title="FruityEva-About">
+  <!--MAIN CONTAINER-->
+  <section class="mt-32 mb-20 m-auto">
+    <div
+      class="rounded overflow-hidden shadow-md relative pt-10 m-auto lg:w-2/4 border-4 pb-10"
+    >
+      <div class="w-3/4 max-w-lg m-auto">
+        <h3 class="text-xl lg:text-3xl sm:text-2xl w-full text-center pb-5">
+          Let's stay connected and receive the ebook
+          <b>"Fruit-based Mealplan" for FREE.</b>
+        </h3>
+      </div>
 
-    <link rel="shortcut icon" href="..//favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="..//favicon.ico" type="image/x-icon" />
-
-    <!--Styles-->
-    <link rel="stylesheet" href="../style.css" />
-
-    <script
-      src="https://kit.fontawesome.com/3ffbeed2f4.js"
-      crossorigin="anonymous"
-    ></script>
-    <!--  Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-
-    <style>
-      /*Aside Hover Nav*/
-      .ahover {
-        border-bottom: 2px solid #f46f72;
-        width: 0;
-        transition: ease-in;
-      }
-
-      .ahover:hover {
-        width: 80%;
-        transition-duration: 0.3s;
-      }
-
-      /*textAnimate STYLES*/
-      span {
-        opacity: 0;
-        transition: all 4s ease;
-      }
-
-      span.fade {
-        opacity: 1;
-      }
-    </style>
-  </head>
-
-  <body class="bg-gray-50 font-textPrimary p-0 m-0">
-
-    <!--MAIN CONTAINER-->
-    <section class="mt-32 mb-20 m-auto">
-      <div
-        class="rounded overflow-hidden shadow-md relative pt-10 m-auto lg:w-2/4 border-4 pb-10"
-      >
-        <div class="w-3/4 max-w-lg m-auto">
-          <h3 class="text-xl lg:text-3xl sm:text-2xl w-full text-center pb-5">
-            Let's stay connected and receive the ebook
-            <b>"Fruit-based Mealplan" for FREE.</b>
-          </h3>
-        </div>
-
-        <div class="w-3/4 max-w-md m-auto swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                class="imgEbooks"
-                src="..//ebooks/English Erweiterte Version vom Meal plan/1.png"
-                alt="Ebook-Meal plan"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="imgEbooks"
-                src="..//ebooks/English Erweiterte Version vom Meal plan/3.png"
-                alt="Ebook-Meal plan"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="imgEbooks"
-                src="..//ebooks/English Erweiterte Version vom Meal plan/9.png"
-                alt="Ebook-Meal plan"
-              />
-            </div>
-
-            <div class="swiper-slide">
-              <img
-                class="imgEbooks"
-                src="..//ebooks/English Erweiterte Version vom Meal plan/49.png"
-                alt="Ebook-Meal plan"
-              />
-            </div>
-
-            <div class="swiper-slide">
-              <img
-                class="imgEbooks"
-                src="..//ebooks/English Erweiterte Version vom Meal plan/83.png"
-                alt="Ebook-Meal plan"
-              />
-            </div>
+      <div class="w-3/4 max-w-md m-auto swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              class="imgEbooks"
+              src="..//ebooks/English Erweiterte Version vom Meal plan/1.png"
+              alt="Ebook-Meal plan"
+            />
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
+          <div class="swiper-slide">
+            <img
+              class="imgEbooks"
+              src="..//ebooks/English Erweiterte Version vom Meal plan/3.png"
+              alt="Ebook-Meal plan"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="imgEbooks"
+              src="..//ebooks/English Erweiterte Version vom Meal plan/9.png"
+              alt="Ebook-Meal plan"
+            />
+          </div>
 
-        <div class="w-3/4 max-w-lg text-center m-auto mt-8">
-          <!-- Begin Mailchimp Signup Form -->
-          <link
-            href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css"
-            rel="stylesheet"
-            type="text/css"
-          />
-          <style type="text/css">
-            #mc_embed_signup {
-              background: #fff;
-              clear: left;
-              font: 14px Helvetica, Arial, sans-serif;
-            }
-            /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+          <div class="swiper-slide">
+            <img
+              class="imgEbooks"
+              src="..//ebooks/English Erweiterte Version vom Meal plan/49.png"
+              alt="Ebook-Meal plan"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              class="imgEbooks"
+              src="..//ebooks/English Erweiterte Version vom Meal plan/83.png"
+              alt="Ebook-Meal plan"
+            />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <div class="w-3/4 max-w-lg text-center m-auto mt-8">
+        <!-- Begin Mailchimp Signup Form -->
+        <link
+          href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <style type="text/css">
+          #mc_embed_signup {
+            background: #fff;
+            clear: left;
+            font: 14px Helvetica, Arial, sans-serif;
+          }
+          /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-          </style>
-          <div id="mc_embed_signup">
-            <form
-              action="https://gmail.us20.list-manage.com/subscribe/post?u=f473d8aca18a8005a4dd8b9a5&amp;id=4bcd4c297f"
-              method="post"
-              id="mc-embedded-subscribe-form"
-              name="mc-embedded-subscribe-form"
-              class="validate"
-              target="_blank"
-              novalidate
-            >
-              <div id="mc_embed_signup_scroll">
-                <h2>Subscribe</h2>
-                <div class="indicates-required">
-                  <span class="asterisk">*</span> indicates required
-                </div>
-                <div class="mc-field-group">
-                  <label for="mce-EMAIL"
-                    >Email Address <span class="asterisk">*</span>
-                  </label>
-                  <input
-                    type="email"
-                    value=""
-                    name="EMAIL"
-                    class="required email"
-                    id="mce-EMAIL"
-                  />
-                </div>
-                <div class="mc-field-group">
-                  <label for="mce-FNAME">First Name </label>
-                  <input
-                    type="text"
-                    value=""
-                    name="FNAME"
-                    class=""
-                    id="mce-FNAME"
-                  />
-                </div>
-                <div id="mce-responses" class="clear foot">
-                  <div
-                    class="response"
-                    id="mce-error-response"
-                    style="display: none"
-                  ></div>
-                  <div
-                    class="response"
-                    id="mce-success-response"
-                    style="display: none"
-                  ></div>
-                </div>
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        </style>
+        <div id="mc_embed_signup">
+          <form
+            action="https://gmail.us20.list-manage.com/subscribe/post?u=f473d8aca18a8005a4dd8b9a5&id=4bcd4c297f"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate"
+            target="_blank"
+            novalidate
+          >
+            <div id="mc_embed_signup_scroll">
+              <h2>Subscribe</h2>
+              <div class="indicates-required">
+                <span class="asterisk">*</span> indicates required
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-EMAIL"
+                  >Email Address <span class="asterisk">*</span>
+                </label>
+                <input
+                  type="email"
+                  value=""
+                  name="EMAIL"
+                  class="required email"
+                  id="mce-EMAIL"
+                />
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-FNAME">First Name</label>
+                <input
+                  type="text"
+                  value=""
+                  name="FNAME"
+                  class=""
+                  id="mce-FNAME"
+                />
+              </div>
+              <div id="mce-responses" class="clear foot">
                 <div
-                  style="position: absolute; left: -5000px"
-                  aria-hidden="true"
+                  class="response"
+                  id="mce-error-response"
+                  style="display: none"
                 >
-                  <input
-                    type="text"
-                    name="b_f473d8aca18a8005a4dd8b9a5_4bcd4c297f"
-                    tabindex="-1"
-                    value=""
-                  />
                 </div>
-                <div class="optionalParent">
-                  <div class="clear foot">
-                    <input
-                      type="submit"
-                      value="Subscribe"
-                      name="subscribe"
-                      id="mc-embedded-subscribe"
-                      class="button"
-                    />
-                    <p class="brandingLogo">
-                      <a
-                        href="http://eepurl.com/hRddxv"
-                        title="Mailchimp - email marketing made easy and fun"
-                        ><img
-                          src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"
-                      /></a>
-                    </p>
-                  </div>
+                <div
+                  class="response"
+                  id="mce-success-response"
+                  style="display: none"
+                >
                 </div>
               </div>
-            </form>
-          </div>
-          <script
-            type="text/javascript"
-            src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-          ></script>
-          <script type="text/javascript">
-            (function ($) {
-              window.fnames = new Array();
-              window.ftypes = new Array();
-              fnames[0] = "EMAIL";
-              ftypes[0] = "email";
-              fnames[1] = "FNAME";
-              ftypes[1] = "text";
-              fnames[3] = "ADDRESS";
-              ftypes[3] = "address";
-              fnames[4] = "PHONE";
-              ftypes[4] = "phone";
-            })(jQuery);
-            var $mcj = jQuery.noConflict(true);
-          </script>
-          <!--End mc_embed_signup-->
-        </div>
-      </div>
-    </section>
-
-    <footer
-      class="bg-home2section bg-no-repeat bg-center backdrop-filter backdrop-blur-2xl backdrop-contrast-200"
-    >
-      <div class="grid grid-cols-1 lg:grid-cols-2 self-center w-full lg:pl-20">
-        <div class="mt-10">
-          <ul class="flex lg:hidden gap-7 mt-2 lg:mt-10 justify-center">
-            <li class="text-social-YouTube hover:opacity-40">
-              <a
-                href="https://www.youtube.com/channel/UCFdSji5trOHyOwu2ue-dZaA"
-                target="_blank"
-                ><i class="fab fa-2x fa-youtube"></i
-              ></a>
-            </li>
-            <li class="text-social-Instagram hover:opacity-40">
-              <a href="https://www.instagram.com/fruityeva/" target="_blank"
-                ><i class="fab fa-2x fa-instagram"></i
-              ></a>
-            </li>
-            <li class="text-black hover:opacity-40">
-              <a
-                href="https://mailchi.mp/a95b3196a58e/fruityeva"
-                target="_blank"
-                ><i class="fab fa-2x fa-mailchimp"></i
-              ></a>
-            </li>
-            <li class="items-center flex hover:opacity-40">
-              <a href=""
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="35"
-                  height="20"
-                  viewBox="0 0 45 16"
-                >
-                  <path
-                    d="M6.562 7.312L2 11.826V1.788A.995.995 0 0 0 1 .8a.993.993 0 0 0-.999.988v12.42a.99.99 0 0 0 .998.986 1 1 0 0 0 .707-.287l5.575-5.51 5.577 5.512a1.003 1.003 0 0 0 1.413 0 .978.978 0 0 0 0-1.398l-5.575-5.51L14.27 2.49a.978.978 0 0 0 0-1.398 1.008 1.008 0 0 0-1.413 0l-6.27 6.202c-.005 0-.009.004-.012.008l-.013.012zm16.55 7.886a.993.993 0 0 1-1-.987V1.79a.994.994 0 0 1 1-.989c.55 0 .999.443.999.989v12.42a.993.993 0 0 1-1 .987zM36.718 2.779v11.432c0 .545.446.987.998.987.55 0 1-.44 1-.987V2.779h5.282A.995.995 0 0 0 45 1.791a.995.995 0 0 0-1-.989H31.434a.995.995 0 0 0-.998.989c0 .545.447.988.999.988h5.285-.001z"
-                  /></svg
-              ></a>
-            </li>
-          </ul>
-
-          <ul class="hidden lg:flex gap-7 mt-2 lg:mt-10 justify-center">
-            <li class="text-social-YouTube hover:opacity-40">
-              <a
-                href="https://www.youtube.com/channel/UCFdSji5trOHyOwu2ue-dZaA"
-                target="_blank"
-                ><i class="fab fa-4x fa-youtube"></i
-              ></a>
-            </li>
-            <li class="text-social-Instagram hover:opacity-40">
-              <a href="https://www.instagram.com/fruityeva/" target="_blank"
-                ><i class="fab fa-4x fa-instagram"></i
-              ></a>
-            </li>
-            <li class="text-black hover:opacity-40">
-              <a
-                href="https://mailchi.mp/a95b3196a58e/fruityeva"
-                target="_blank"
-                ><i class="fab fa-4x fa-mailchimp"></i
-              ></a>
-            </li>
-            <li class="items-center flex hover:opacity-40">
-              <a href=""
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="65"
-                  height="40"
-                  viewBox="0 0 45 16"
-                >
-                  <path
-                    d="M6.562 7.312L2 11.826V1.788A.995.995 0 0 0 1 .8a.993.993 0 0 0-.999.988v12.42a.99.99 0 0 0 .998.986 1 1 0 0 0 .707-.287l5.575-5.51 5.577 5.512a1.003 1.003 0 0 0 1.413 0 .978.978 0 0 0 0-1.398l-5.575-5.51L14.27 2.49a.978.978 0 0 0 0-1.398 1.008 1.008 0 0 0-1.413 0l-6.27 6.202c-.005 0-.009.004-.012.008l-.013.012zm16.55 7.886a.993.993 0 0 1-1-.987V1.79a.994.994 0 0 1 1-.989c.55 0 .999.443.999.989v12.42a.993.993 0 0 1-1 .987zM36.718 2.779v11.432c0 .545.446.987.998.987.55 0 1-.44 1-.987V2.779h5.282A.995.995 0 0 0 45 1.791a.995.995 0 0 0-1-.989H31.434a.995.995 0 0 0-.998.989c0 .545.447.988.999.988h5.285-.001z"
-                  /></svg
-              ></a>
-            </li>
-          </ul>
-          <h3
-            class="text-center font-textPrimary text-white font-bold underline pb-8 text-4xl pt-7"
-          >
-            Any questions? <br />
-            Contact me
-          </h3>
-
-          <div class="text-center lg:hidden">
-            <i
-              class="pb-8 fa-3x text-palette-three shadow-lg fas fa-arrow-down"
-            ></i>
-          </div>
-          <div class="text-center hidden lg:block">
-            <i
-              class="pb-8 fa-3x text-palette-three shadow-lg fas fa-arrow-right"
-            ></i>
-          </div>
-        </div>
-        <div
-        class="mt-10 drop-shadow-lg max-w-lg p-3 flex w-full m-auto bg-palette2-six opacity-75 flex-col"
-      >
-        <ul
-          class="flex gap-10 flex-col text-left sm:w-5/6 align-middle m-auto self-center mb-5"
-        >
-          <li class="btn mt-5 bg-palette2-three hover:bg-palette-three">
-            <a href="mailto:evibuchi36@gmail.com"
-              >Email:evibuchi36@gmail.com</a
-            >
-          </li>
-          <li>
-            <a
-              class="btn mt-5 bg-palette2-three hover:bg-palette-three"
-              href="https://www.instagram.com/fruityeva/?hl=es"
-              target="_blank"
-              >Instagram</a
-            >
-          </li>
-        </ul>
-      </div>
-         <!--  <form
-            action="../sendmail.php"
-            method="POST"
-            name="contacto"
-            class="flex flex-col text-left sm:w-5/6 align-middle m-auto self-center mb-5"
-          >
-            <label for="name">First Name</label>
-            <input
-              class="border border-gray-300 font-bold text-gray-500"
-              required
-              placeholder="Eva"
-              name="name"
-              type="text"
-              pattern="[A-Za-zñÑáéíóúÁÉÍÓÚªº\s]+"
-            />
-            <label for="email">Email Address</label>
-            <input
-              class="font-bold border border-gray-300 text-gray-500"
-              placeholder="evibuchi36@gmail.com"
-              name="txtemail"
-              type="email"
-              required
-            />
-            <input
-              type="hidden"
-              name="_next"
-              value="http://www.fruityeva.com/public/thanks"
-            />
-            <label for="subject">Subject</label>
-            <input class="font-bold border border-gray-300 text-gray-500"
-            placeholder="What's it about?" name="subject" id="subject"
-            type="text" "[A-Za-z0-9ñÑáéíóúÁÉÍÓÚªº()\s]+">
-            <label for="message">Message</label>
-            <textarea
-              class="font-bold border border-gray-300 text-gray-500"
-              required
-              name="msg"
-              id="message"
-              cols="30"
-              rows="5"
-              placeholder="Write you Message"
-              pattern="[A-Za-z0-9ñÑáéíóúÁÉÍÓÚªº()\s]+"
-            ></textarea>
-            <input
-              class="btn mt-5 bg-palette2-three hover:bg-palette-three"
-              type="submit"
-              value="Submit Message"
-            />
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px" aria-hidden="true">
+                <input
+                  type="text"
+                  name="b_f473d8aca18a8005a4dd8b9a5_4bcd4c297f"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
+              <div class="optionalParent">
+                <div class="clear foot">
+                  <input
+                    type="submit"
+                    value="Subscribe"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
+                    class="button"
+                  />
+                  <p class="brandingLogo">
+                    <a
+                      href="http://eepurl.com/hRddxv"
+                      title="Mailchimp - email marketing made easy and fun"
+                      ><img
+                        src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"
+                      /></a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
           </form>
-        </div> -->
-    
-      <div
-        class="flex flex-wrap justify-evenly mt-5 text-center gap-2 overflow-hidden font-bold bg-black opacity-70"
-      >
-        <div
-          class="pl-2 lg:pl-0 flex gap-16 text-palette2 font-extrabold text-white"
-        >
-          <a href="../pdf/DISCLAIMER.pdf">Disclamer</a>
-          <a href="../pdf/PRIVACY POLICY AGREEMENT.pdf"
-            >Privacy policy agreement</a
-          >
-          <a href="../pdf/Terms and conditions .pdf">Terms and conditions</a>
         </div>
-
-        <h4 class="hover:opacity-70 text-white">
-          <a href="http//www.jdluis.com">Copyright @ 2021 - jdluis.com</a>
-        </h4>
+        <script
+          type="text/javascript"
+          src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+        ></script>
+        <script type="text/javascript">
+          (function ($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[0] = "EMAIL";
+            ftypes[0] = "email";
+            fnames[1] = "FNAME";
+            ftypes[1] = "text";
+            fnames[3] = "ADDRESS";
+            ftypes[3] = "address";
+            fnames[4] = "PHONE";
+            ftypes[4] = "phone";
+          })(jQuery);
+          var $mcj = jQuery.noConflict(true);
+        </script>
+        <!--End mc_embed_signup-->
       </div>
-    </footer>
-
-    <!--SCRIPTS, JS---start---->
-    <script src="../app/textAnimate.js"></script>
-    <script src="../app/showNav.js"></script>
-    <script src="../app/smoothScroll.js"></script>
-    <script src="../app/navdrop.js"></script>
-
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-    <!--SCRIPTS, JS---finish-->
-  </body>
-</html>
+    </div>
+  </section>
+</Layout>

@@ -7,4 +7,3 @@ function ocultar(n) {
     document.getElementById("subseccion"+n).style.display="none"
     }
     
-export {ver, ocultar};

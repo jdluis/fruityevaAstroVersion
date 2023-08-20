@@ -1,348 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FruityEva</title>
+---
+import LayoutDe from "../../layouts/Layout_de.astro";
+---
 
-    <meta name="title" content="Fruity Eva" />
-    <meta
-      name="description"
-      content="Helping you to improve your health with a fruit-based vegan diet."
-    />
-    <meta name="keywords" content="fruit, vegan, diet" />
-    <meta name="robots" content="index, follow" />
-    <meta name="language" content="English" />
-    <meta name="author" content="jdluis.com" />
-
-    <link rel="shortcut icon" href="..//favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="..//favicon.ico" type="image/x-icon" />
-
-    <!--Styles-->
-    <link rel="stylesheet" href="../style.css" />
-
-    <script
-      src="https://kit.fontawesome.com/3ffbeed2f4.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <style>
-      /*Aside Hover Nav*/
-      .ahover {
-        border-bottom: 2px solid #f46f72;
-        width: 0;
-        transition: ease-in;
-      }
-
-      .ahover:hover {
-        width: 80%;
-        transition-duration: 0.3s;
-      }
-
-      /*textAnimate STYLES*/
-      span {
-        opacity: 0;
-        transition: all 4s ease;
-      }
-
-      span.fade {
-        opacity: 1;
-      }
-    </style>
-  </head>
-
-  <body class="bg-gray-50 font-textPrimary p-0 m-0">
-
-    <!--MAIN  CONTAINER start-->
-
-    <div
-      class="grid grid-cols-1 items-center w-5/6 m-auto lg:grid-cols-2 2xl:p-10"
-    >
-      <div class="m-10 ml-auto h-auto mr-auto w-4/6 sm:w-3/6 mt-32">
-        <img
-          class="w-full m-auto border shadow-2xl"
-          src="..//author/nice.jpg"
-          alt="FruityEva"
-        />
-      </div>
-
-      <div class="lg:mt-20 lg:ml-10 w-full lg:w-4/6 ml-auto mr-auto">
-        <h2
-          class="pt-20 text-5xl font-bold border-b-2 w-5/6 2xl:3/6 border-palette2-three mb-6"
-        >
-          Über mich
-        </h2>
-        <h4 class="text-palette2-text text-center text-2xl">
-          "Wenn du das Leben deiner Träume kreieren willst, dann bist du hier an
-          der richtigen Stelle!"
-        </h4>
-        <br />
-        <p>
-          Vor vielen Jahren hatte ich mit Essstörungen zu kämpfen. Ich versuchte
-          endlos viele Diäten, um mein Wohlbefinden wiederzugewinnen.
-        </p>
-        <br />
-        <h4 class="text-palette2-text text-center text-2xl">
-          Keine Diät funktionierte wirklich und ich hatte es satt!
-        </h4>
-        <br />
-        <p>
-          Ich war bereit, Diäten hinter mir zu lassen und meine Gewohnheiten und
-          mein Leben langfristig und nachhaltig zum Positiven zu verändern.
-        </p>
-        <br />
-        <h4 class="text-palette2-text text-center text-2xl">
-          “Das Leben ist schön und ich war bereit das zu erkennen!”
-        </h4>
-        <br />
-      </div>
-    </div>
-    <div class="m-auto text-center">
-      <i class="fas fa-4x text-palette-three fa-caret-down"></i>
+<LayoutDe title="Uber">
+  <div
+    class="grid grid-cols-1 items-center w-5/6 m-auto lg:grid-cols-2 2xl:p-10"
+  >
+    <div class="m-10 ml-auto h-auto mr-auto w-4/6 sm:w-3/6 mt-32">
+      <img
+        class="w-full m-auto border shadow-2xl"
+        src="..//author/nice.jpg"
+        alt="FruityEva"
+      />
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 p-10 lg:p-20 items-center">
-      <div class="p-4 w-full lg:w-4/6 ml-auto mr-auto">
-        <h2
-          class="text-5xl font-bold border-b-2 w-5/6 lg:w-3/6 border-palette2-three mb-6"
-        ></h2>
-        <p>
-          ​Ich wollte "JA!" zu meinen Träumen sagen! Einen veganen und später
-          einen obst-basierten Lebensstil zu beginnen, hat mein ganzes Leben
-          verändert (Beziehungen, Geld und die Länder, in denen ich lebe). Es
-          hat mir erlaubt, mein authentisches Selbst zu sein und Kontrolle über
-          meine Gesundheit und Leben zurückzunehmen. Ich begann, mich
-          unglaublich gut zu fühlen und so viel verbesserte sich zum Besseren.
-        </p>
-        <br />
-        <h4 class="text-palette2-text text-center text-2xl">
-          "Durch meine Ernährungsumstellung fühle ich mich bereit, meinen
-          Träumen nachzugehen."
-        </h4>
-        <br />
-        <p>
-          Ich liebe es, zu sehen wie sich das Leben und die Gesundheit von
-          Menschen verändert, nachdem sie auf eine obst-basierte vegane
-          Ernährung umstellen. Es ist immer wieder erstaunlich, wie schnell und
-          leicht Menschen abnehmen, wie sich die Haut verbessert.
-        </p>
-        <br />
-        <h4 class="text-palette2-text text-center text-2xl">
-          "All das ist auch für dich möglich! Und ich zeige dir wie."
-        </h4>
-        <br />
-      </div>
-
-      <div class="lg:m-5 m-auto w-full sm:w-3/6 lg:w-4/6 border-2 shadow-2xl">
-        <img
-          class="w-full"
-          src="..//author/evacomputer.jpg"
-          alt="FruityEva"
-        />
-      </div>
-    </div>
-
-    <div class="m-auto text-center">
-      <i class="fas fa-4x text-palette-three fa-caret-down"></i>
-    </div>
-
-    <div
-      class="grid grid-cols-1 lg:grid-cols-2 gap-5 w-5/6 lg:w-4/6 m-auto text-cente"
-    >
-      <div class="hidden lg:block m-auto lg:w-5/6 text-center p-5 self-end">
-        <img
-          class="border-2 shadow-2xl w-full"
-          src="..//aboutFruit.jpeg"
-          alt="Papaya Fruit"
-        />
-      </div>
-      <ul
-        class="flex border shadow-xl m-1 border-palette2-three flex-col gap-2 text-left text-xl p-5 mb-5 leading-5 mt-10"
+    <div class="lg:mt-20 lg:ml-10 w-full lg:w-4/6 ml-auto mr-auto">
+      <h2
+        class="pt-20 text-5xl font-bold border-b-2 w-5/6 2xl:3/6 border-palette2-three mb-6"
       >
-        <h3 class="text-3xl pb-10 underline">5 Fakten über mich:</h3>
-        <li class="pb-5">
-          <p class="font-bold">1. Was ist mein Sternzeichen?</p>
-          Zwilling
-        </li>
-        <li class="pb-5">
-          <p class="font-bold">2. Wie würde ich mich beschreiben?</p>
-          Lustig, gutherzig, zielstrebig
-        </li>
-        <li class="pb-5">
-          <p class="font-bold">3. Mein Lieblingslied?</p>
-          Circles von Post Malone
-        </li>
-        <li class="pb-5">
-          <p class="font-bold">4. Was ist mein liebstes Hobby?</p>
-          Tanzen
-        </li>
-        <li class="pb-5">
-          <p class="font-bold">5. Wichtigste Nachricht?</p>
-          Werde obst-basiert vegan.
-        </li>
-      </ul>
+        Über mich
+      </h2>
+      <h4 class="text-palette2-text text-center text-2xl">
+        "Wenn du das Leben deiner Träume kreieren willst, dann bist du hier an
+        der richtigen Stelle!"
+      </h4>
+      <br />
+      <p>
+        Vor vielen Jahren hatte ich mit Essstörungen zu kämpfen. Ich versuchte
+        endlos viele Diäten, um mein Wohlbefinden wiederzugewinnen.
+      </p>
+      <br />
+      <h4 class="text-palette2-text text-center text-2xl">
+        Keine Diät funktionierte wirklich und ich hatte es satt!
+      </h4>
+      <br />
+      <p>
+        Ich war bereit, Diäten hinter mir zu lassen und meine Gewohnheiten und
+        mein Leben langfristig und nachhaltig zum Positiven zu verändern.
+      </p>
+      <br />
+      <h4 class="text-palette2-text text-center text-2xl">
+        “Das Leben ist schön und ich war bereit das zu erkennen!”
+      </h4>
+      <br />
     </div>
-    <!--MAIN  CONTAINER finish-->
+  </div>
+  <div class="m-auto text-center">
+    <i class="fas fa-4x text-palette-three fa-caret-down"></i>
+  </div>
 
-    <footer
-      class="bg-home2section bg-no-repeat bg-center backdrop-filter backdrop-blur-2xl backdrop-contrast-200"
+  <div class="grid grid-cols-1 lg:grid-cols-2 p-10 lg:p-20 items-center">
+    <div class="p-4 w-full lg:w-4/6 ml-auto mr-auto">
+      <h2
+        class="text-5xl font-bold border-b-2 w-5/6 lg:w-3/6 border-palette2-three mb-6"
+      >
+      </h2>
+      <p>
+        ​Ich wollte "JA!" zu meinen Träumen sagen! Einen veganen und später
+        einen obst-basierten Lebensstil zu beginnen, hat mein ganzes Leben
+        verändert (Beziehungen, Geld und die Länder, in denen ich lebe). Es hat
+        mir erlaubt, mein authentisches Selbst zu sein und Kontrolle über meine
+        Gesundheit und Leben zurückzunehmen. Ich begann, mich unglaublich gut zu
+        fühlen und so viel verbesserte sich zum Besseren.
+      </p>
+      <br />
+      <h4 class="text-palette2-text text-center text-2xl">
+        "Durch meine Ernährungsumstellung fühle ich mich bereit, meinen Träumen
+        nachzugehen."
+      </h4>
+      <br />
+      <p>
+        Ich liebe es, zu sehen wie sich das Leben und die Gesundheit von
+        Menschen verändert, nachdem sie auf eine obst-basierte vegane Ernährung
+        umstellen. Es ist immer wieder erstaunlich, wie schnell und leicht
+        Menschen abnehmen, wie sich die Haut verbessert.
+      </p>
+      <br />
+      <h4 class="text-palette2-text text-center text-2xl">
+        "All das ist auch für dich möglich! Und ich zeige dir wie."
+      </h4>
+      <br />
+    </div>
+
+    <div class="lg:m-5 m-auto w-full sm:w-3/6 lg:w-4/6 border-2 shadow-2xl">
+      <img class="w-full" src="..//author/evacomputer.jpg" alt="FruityEva" />
+    </div>
+  </div>
+
+  <div class="m-auto text-center">
+    <i class="fas fa-4x text-palette-three fa-caret-down"></i>
+  </div>
+
+  <div
+    class="grid grid-cols-1 lg:grid-cols-2 gap-5 w-5/6 lg:w-4/6 m-auto text-cente"
+  >
+    <div class="hidden lg:block m-auto lg:w-5/6 text-center p-5 self-end">
+      <img
+        class="border-2 shadow-2xl w-full"
+        src="..//aboutFruit.jpeg"
+        alt="Papaya Fruit"
+      />
+    </div>
+    <ul
+      class="flex border shadow-xl m-1 border-palette2-three flex-col gap-2 text-left text-xl p-5 mb-5 leading-5 mt-10"
     >
-      <div class="grid grid-cols-1 lg:grid-cols-2 self-center w-full lg:pl-20">
-        <div class="mt-10">
-          <ul class="flex lg:hidden gap-7 mt-2 lg:mt-10 justify-center">
-            <li class="text-social-YouTube hover:opacity-40">
-              <a
-                href="https://www.youtube.com/channel/UCFdSji5trOHyOwu2ue-dZaA"
-                target="_blank"
-                ><i class="fab fa-2x fa-youtube"></i
-              ></a>
-            </li>
-            <li class="text-social-Instagram hover:opacity-40">
-              <a href="https://www.instagram.com/fruityeva/" target="_blank"
-                ><i class="fab fa-2x fa-instagram"></i
-              ></a>
-            </li>
-            <li class="text-black hover:opacity-40">
-              <a
-                href="https://mailchi.mp/a95b3196a58e/fruityeva"
-                target="_blank"
-                ><i class="fab fa-2x fa-mailchimp"></i
-              ></a>
-            </li>
-            <li class="items-center flex hover:opacity-40">
-              <a href=""
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="35"
-                  height="20"
-                  viewBox="0 0 45 16"
-                >
-                  <path
-                    d="M6.562 7.312L2 11.826V1.788A.995.995 0 0 0 1 .8a.993.993 0 0 0-.999.988v12.42a.99.99 0 0 0 .998.986 1 1 0 0 0 .707-.287l5.575-5.51 5.577 5.512a1.003 1.003 0 0 0 1.413 0 .978.978 0 0 0 0-1.398l-5.575-5.51L14.27 2.49a.978.978 0 0 0 0-1.398 1.008 1.008 0 0 0-1.413 0l-6.27 6.202c-.005 0-.009.004-.012.008l-.013.012zm16.55 7.886a.993.993 0 0 1-1-.987V1.79a.994.994 0 0 1 1-.989c.55 0 .999.443.999.989v12.42a.993.993 0 0 1-1 .987zM36.718 2.779v11.432c0 .545.446.987.998.987.55 0 1-.44 1-.987V2.779h5.282A.995.995 0 0 0 45 1.791a.995.995 0 0 0-1-.989H31.434a.995.995 0 0 0-.998.989c0 .545.447.988.999.988h5.285-.001z"
-                  /></svg
-              ></a>
-            </li>
-          </ul>
-
-          <ul class="hidden lg:flex gap-7 mt-2 lg:mt-10 justify-center">
-            <li class="text-social-YouTube hover:opacity-40">
-              <a
-                href="https://www.youtube.com/channel/UCFdSji5trOHyOwu2ue-dZaA"
-                target="_blank"
-                ><i class="fab fa-4x fa-youtube"></i
-              ></a>
-            </li>
-            <li class="text-social-Instagram hover:opacity-40">
-              <a href="https://www.instagram.com/fruityeva/" target="_blank"
-                ><i class="fab fa-4x fa-instagram"></i
-              ></a>
-            </li>
-            <li class="text-black hover:opacity-40">
-              <a
-                href="https://mailchi.mp/a95b3196a58e/fruityeva"
-                target="_blank"
-                ><i class="fab fa-4x fa-mailchimp"></i
-              ></a>
-            </li>
-            <li class="items-center flex hover:opacity-40">
-              <a href=""
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="65"
-                  height="40"
-                  viewBox="0 0 45 16"
-                >
-                  <path
-                    d="M6.562 7.312L2 11.826V1.788A.995.995 0 0 0 1 .8a.993.993 0 0 0-.999.988v12.42a.99.99 0 0 0 .998.986 1 1 0 0 0 .707-.287l5.575-5.51 5.577 5.512a1.003 1.003 0 0 0 1.413 0 .978.978 0 0 0 0-1.398l-5.575-5.51L14.27 2.49a.978.978 0 0 0 0-1.398 1.008 1.008 0 0 0-1.413 0l-6.27 6.202c-.005 0-.009.004-.012.008l-.013.012zm16.55 7.886a.993.993 0 0 1-1-.987V1.79a.994.994 0 0 1 1-.989c.55 0 .999.443.999.989v12.42a.993.993 0 0 1-1 .987zM36.718 2.779v11.432c0 .545.446.987.998.987.55 0 1-.44 1-.987V2.779h5.282A.995.995 0 0 0 45 1.791a.995.995 0 0 0-1-.989H31.434a.995.995 0 0 0-.998.989c0 .545.447.988.999.988h5.285-.001z"
-                  /></svg
-              ></a>
-            </li>
-          </ul>
-          <h3
-            class="text-center font-textPrimary text-white font-bold underline pb-8 text-4xl pt-7"
-          >
-            Fragen? <br />Kontaktiere mich
-          </h3>
-
-          <div class="text-center lg:hidden">
-            <i
-              class="pb-8 fa-3x text-palette-three shadow-lg fas fa-arrow-down"
-            ></i>
-          </div>
-          <div class="text-center hidden lg:block">
-            <i
-              class="pb-8 fa-3x text-palette-three shadow-lg fas fa-arrow-right"
-            ></i>
-          </div>
-        </div>
-        <div
-        class="mt-10 drop-shadow-lg max-w-lg p-3 flex w-full m-auto bg-palette2-six opacity-75 flex-col"
-      >
-        <ul
-          class="flex gap-10 flex-col text-left sm:w-5/6 align-middle m-auto self-center mb-5"
-        >
-          <li class="btn mt-5 bg-palette2-three hover:bg-palette-three">
-            <a href="mailto:evibuchi36@gmail.com"
-              >Email:evibuchi36@gmail.com</a
-            >
-          </li>
-          <li>
-            <a
-              class="btn mt-5 bg-palette2-three hover:bg-palette-three"
-              href="https://www.instagram.com/fruityeva/?hl=es"
-              target="_blank"
-              >Instagram</a
-            >
-          </li>
-        </ul>
-      </div>
-        <!-- <div class=" mt-10  drop-shadow-lg max-w-lg p-3 flex w-full m-auto bg-palette2-six  opacity-75 flex-col">
-      
-      <form action="../sendmail.php" method="POST" name="contacto" class="flex flex-col text-left sm:w-5/6 align-middle m-auto self-center mb-5">
-        <label for="name">First Name</label>
-        <input class="border border-gray-300 font-bold text-gray-500" required placeholder="Eva" name="name" type="text" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚªº\s]+">
-        <label for="email">Email Address</label>
-        <input class="font-bold border border-gray-300 text-gray-500" placeholder="evibuchi36@gmail.com"
-            name="txtemail" type="email" required>
-            <input type="hidden" name="_next" value="http://www.fruityeva.com/public/thanks"> 
-        <label for="subject">Subject</label>
-        <input class="font-bold border border-gray-300 text-gray-500" placeholder="What's it about?" name="subject" id="subject" type="text" "[A-Za-z0-9ñÑáéíóúÁÉÍÓÚªº()\s]+">
-        <label for="message">Message</label>
-        <textarea class="font-bold border border-gray-300 text-gray-500" required name="msg" id="message" cols="30"
-            rows="5" placeholder="Write you Message" pattern="[A-Za-z0-9ñÑáéíóúÁÉÍÓÚªº()\s]+" ></textarea>
-        <input class="btn mt-5 bg-palette2-three hover:bg-palette-three" type="submit" value="Submit Message">
-    </form>
-    </div> -->
-      </div>
-      <div
-        class="flex flex-wrap justify-evenly mt-5 text-center gap-2 overflow-hidden font-bold bg-black opacity-70"
-      >
-        <div
-          class="pl-2 lg:pl-0 flex gap-16 text-palette2 font-extrabold text-white"
-        >
-          <a target="_blank" href="../pdf/Disclaimer_ Haftungsausschuss.pdf"
-            >Disclamer</a
-          >
-          <a target="_blank" href="../pdf/Datenschutzerklärung.pdf"
-            >Datenschutzerklärung</a
-          >
-          <a target="_blank" href="../pdf/AGB Vereinbarung.pdf"
-            >AGB Vereinbarung.</a
-          >
-        </div>
-
-        <h4 class="hover:opacity-70 text-white">
-          <a href="http//www.jdluis.com">Copyright @ 2021 - jdluis.com</a>
-        </h4>
-      </div>
-    </footer>
-
-    <!--SCRIPTS, JS---start---->
-    <script src="../app/textAnimate.js"></script>
-    <script src="../app/showNav.js"></script>
-    <script src="../app/smoothScroll.js"></script>
-    <script src="../app/navdrop.js"></script>
-    <!--SCRIPTS, JS---finish-->
-  </body>
-</html>
+      <h3 class="text-3xl pb-10 underline">5 Fakten über mich:</h3>
+      <li class="pb-5">
+        <p class="font-bold">1. Was ist mein Sternzeichen?</p>
+        Zwilling
+      </li>
+      <li class="pb-5">
+        <p class="font-bold">2. Wie würde ich mich beschreiben?</p>
+        Lustig, gutherzig, zielstrebig
+      </li>
+      <li class="pb-5">
+        <p class="font-bold">3. Mein Lieblingslied?</p>
+        Circles von Post Malone
+      </li>
+      <li class="pb-5">
+        <p class="font-bold">4. Was ist mein liebstes Hobby?</p>
+        Tanzen
+      </li>
+      <li class="pb-5">
+        <p class="font-bold">5. Wichtigste Nachricht?</p>
+        Werde obst-basiert vegan.
+      </li>
+    </ul>
+  </div>
+</LayoutDe>
