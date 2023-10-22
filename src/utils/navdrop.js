@@ -1,9 +1,8 @@
 
-function ver(n) {
+export function ver(n) {
     document.getElementById("subseccion"+n).style.display="block"
     };
 
-function ocultar(n) {
+export function ocultar(n) {
     document.getElementById("subseccion"+n).style.display="none"
     }
-    

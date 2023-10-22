@@ -1,6 +1,6 @@
 ---
-import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
 
 interface Props {
   title: string;
@@ -24,21 +24,7 @@ const { title } = Astro.props;
     <meta name="robots" content="index, follow" />
     <meta name="language" content="English" />
     <meta name="author" content="jdluis.com" />
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=MEASUREMENT_ID"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-6H5PT54ZXJ");
-    </script>
-
+    <base href="/en/" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
@@ -78,16 +64,13 @@ const { title } = Astro.props;
     <slot />
     <Footer />
   </body>
-  
-  <!--SCRIPTS, JS---start---->
-  <script is:inline src="./app/textAnimate.js"></script>
-  <script is:inline src="./app/showNav.js"></script>
-  <script is:inline src="./app/smoothScroll.js"></script>
-  <script is:inline src="./app/navdrop.js"></script>
 
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
+    import Swiper from "swiper";
+    // import Swiper styles
+    import "swiper/css";
     var swiper = new Swiper(".mySwiper", {
       navigation: {
         nextEl: ".swiper-button-next",
@@ -95,6 +78,4 @@ const { title } = Astro.props;
       },
     });
   </script>
-
-  <!--SCRIPTS, JS---finish-->
 </html>

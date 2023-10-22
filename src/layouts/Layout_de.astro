@@ -11,68 +11,74 @@ const { title } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="title" content="Fruity Eva" />
+    <meta
+      name="description"
+      content="Ich helfe Ihnen dabei, Ihre Gesundheit mit einer frucht-basierten veganen Ernährung zu verbessern."
+    />
+    <meta name="keywords" content="Obst, vegan, Diät" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Deutschland" />
+    <meta name="author" content="jdluis.com" />
+    <base href="/de/" />
+    <link rel="shortcut icon" href="..//favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="..//favicon.ico" type="image/x-icon" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{title}</title>
-  <meta name="title" content="Fruity Eva" />
-  <meta name="description" content="Ich helfe Ihnen dabei, Ihre Gesundheit mit einer frucht-basierten veganen Ernährung zu verbessern." />
-  <meta name="keywords" content="Obst, vegan, Diät" />
-  <meta name="robots" content="index, follow" />
-  <meta name="language" content="Deutschland" />
-  <meta name="author" content="jdluis.com" />
+    <!--Styles-->
+    <link rel="stylesheet" href="../style.css" />
 
-  <link rel="shortcut icon" href="..//favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="..//favicon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/3ffbeed2f4.js"
+      crossorigin="anonymous"></script>
 
-  <!--Styles-->
-  <link rel="stylesheet" href="../style.css" />
+    <style>
+      /*Aside Hover Nav*/
+      .ahover {
+        border-bottom: 2px solid #f46f72;
+        width: 0;
+        transition: ease-in;
+      }
 
-  <script src="https://kit.fontawesome.com/3ffbeed2f4.js" crossorigin="anonymous"></script>
+      .ahover:hover {
+        width: 80%;
+        transition-duration: 0.3s;
+      }
 
-  <style>
-    /*Aside Hover Nav*/
-    .ahover {
-      border-bottom: 2px solid #f46f72;
-      width: 0;
-      transition: ease-in;
-    }
+      /*textAnimate STYLES*/
+      span {
+        opacity: 0;
+        transition: all 4s ease;
+      }
 
-    .ahover:hover {
-      width: 80%;
-      transition-duration: 0.3s;
-    }
-
-    /*textAnimate STYLES*/
-    span {
-      opacity: 0;
-      transition: all 4s ease;
-    }
-
-    span.fade {
-      opacity: 1;
-    }
-  </style>
-</head>
-
+      span.fade {
+        opacity: 1;
+      }
+    </style>
+  </head>
 
   <body>
     <Nav_de />
     <slot />
     <FooterDe />
   </body>
-  
-  <!--SCRIPTS, JS---start---->
-  <script is:inline src="./app/textAnimate.js"></script>
-  <script is:inline src="./app/showNav.js"></script>
-  <script is:inline src="./app/smoothScroll.js"></script>
-  <script is:inline src="./app/navdrop.js"></script>
+
+  <script is:inline src="/utils/navdrop.js"></script>
+  <script is:inline src="/utils/showNav.js"></script>
+  <script is:inline src="/utils/smoothScroll.js"></script>
+  <script is:inline src="/utils/textAnimate.js"></script>
 
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
+    // import Swiper JS
+    import Swiper from "swiper";
+    // import Swiper styles
+    import "swiper/css";
     var swiper = new Swiper(".mySwiper", {
       navigation: {
         nextEl: ".swiper-button-next",
