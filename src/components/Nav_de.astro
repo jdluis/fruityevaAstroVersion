@@ -3,9 +3,23 @@ import { ver, ocultar } from "../utils/navdrop";
 ---
 
 <script>
-  const button = document.getElementById("btnExpandContent" || "btnSwitchMenu");
-  
-  
+ const button = document.getElementById("btnExpandContent" || "btnSwitchMenu");
+  const btnOpenMenu = document.getElementById("switchButtom");
+  const movileMenuSection = document.getElementById("MobileNavContainer");
+
+  function switchHidden() {
+    document.querySelector("#MobileNavContainer").classList.toggle("hidden");
+  }
+
+  function closeMenu() {
+    movileMenuSection.addEventListener("mouseover", () => {
+      document.querySelector("#MobileNavContainer").classList.remove("hidden");
+    });
+
+    movileMenuSection.addEventListener("mouseout", () => {
+      document.querySelector("#MobileNavContainer").classList.add("hidden");
+    });
+  }
 
   function ver(n) {
     document.getElementById("subseccion" + n).style.display = "block";
@@ -24,6 +38,15 @@ import { ver, ocultar } from "../utils/navdrop";
     ocultar(1);
   });
 
+  // Open Menu Movile
+  btnOpenMenu.addEventListener("click", () => {
+    switchHidden();
+  });
+
+  movileMenuSection.addEventListener("mouseout", () => {
+    closeMenu();
+  });
+
 </script>
 
 <!-- FOR MOBILE-->
@@ -39,7 +62,7 @@ import { ver, ocultar } from "../utils/navdrop";
         />
       </a>
     </div>
-    <button onclick="switchHidden()" id="switchButtom">
+    <button id="switchButtom">
       <i class="fas fa-2x fa-bars mr-3.5"></i>
     </button>
   </div>
