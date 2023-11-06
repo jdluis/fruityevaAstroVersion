@@ -1,6 +1,29 @@
 ---
 
 ---
+<script>
+  const button = document.getElementById("btnExpandContent" || "btnSwitchMenu");
+  
+  
+
+  function ver(n) {
+    document.getElementById("subseccion" + n).style.display = "block";
+  }
+
+  function ocultar(n) {
+    document.getElementById("subseccion" + n).style.display = "none";
+  }
+
+  // Handle clicks on each button.
+  button.addEventListener("mouseover", () => {
+    ver(1);
+  });
+
+  button.addEventListener("mouseout", () => {
+    ocultar(1);
+  });
+
+</script>
 
 <!-- FOR MOBILE-->
 <div class="z-50 fixed bg-palette2-one text-palette2-text w-full top-0">
@@ -30,8 +53,7 @@
       >
       <li
         class="cursor-pointer list-none"
-        onmouseover="ver(1)"
-        onmouseout="ocultar(1)"
+        id="btnSwitchMenu"
       >
         Products
         <ul id="subseccion2" class="m-auto text-lg">
@@ -67,8 +89,6 @@
             role="img"
             width="40"
             height="24"
-            preserveAspectRatio="xMidYMid meet"
-            viewBox="0 0 64 64"
             alt="Flag-of-Germany"
           /></a
         >
@@ -80,8 +100,6 @@
             role="img"
             width="40"
             height="24"
-            preserveAspectRatio="xMidYMid meet"
-            viewBox="0 0 64 64"
             alt="US-UK-Flag"
           /></a
         >
@@ -102,8 +120,6 @@
         role="img"
         width="40"
         height="25"
-        preserveAspectRatio="xMidYMid meet"
-        viewBox="0 0 64 64"
         alt="US-UK-Flag"
       />
     </a>
@@ -115,8 +131,6 @@
         role="img"
         width="40"
         height="25"
-        preserveAspectRatio="xMidYMid meet"
-        viewBox="0 0 64 64"
         alt="Flag-of-Germany"
       />
     </a>
@@ -142,7 +156,7 @@
           href="/">Home</a
         >
       </li>
-      <li class="cursor-pointer" onmouseover="ver(1)" onmouseout="ocultar(1)">
+      <li class="cursor-pointer"  id="btnExpandContent">
         Products
         <ul id="subseccion1" class="text-left absolute hidden text-lg bg-white">
           <li>
