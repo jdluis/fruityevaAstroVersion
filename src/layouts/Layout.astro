@@ -5,12 +5,12 @@ import { ver, ocultar } from "../utils/navdrop";
 
 interface Props {
   title: string;
-  isIndex: boolean;
+  /* isIndex: boolean; */
 }
 
-const { title, isIndex } = Astro.props;
+const { title, /* isIndex */ } = Astro.props;
 
-const basePath = isIndex ? "/" :  "/en/";
+/* const basePath = isIndex ? "/" :  "/en/"; */
 ---
 
 <html lang="en">
@@ -28,7 +28,7 @@ const basePath = isIndex ? "/" :  "/en/";
     <meta name="robots" content="index, follow" />
     <meta name="language" content="English" />
     <meta name="author" content="jdluis.com" />
-    <base href={basePath} />
+    <base href="/" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 

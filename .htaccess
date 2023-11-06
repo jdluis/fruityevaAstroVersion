@@ -1,5 +1,0 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^fruityeva.com$ [NC,OR]
-RewriteCond %{HTTP_HOST} ^www.fruityeva.com$
-RewriteCond %{REQUEST_URI} !dist/
-RewriteRule (.*) /dist/$1 [L]
