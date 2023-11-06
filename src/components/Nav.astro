@@ -1,10 +1,26 @@
 ---
-
 ---
+
 <script>
+  import { fade } from "astro:transitions";
+
   const button = document.getElementById("btnExpandContent" || "btnSwitchMenu");
-  
-  
+  const btnOpenMenu = document.getElementById("switchButtom");
+  const movileMenuSection = document.getElementById("MobileNavContainer");
+
+  function switchHidden() {
+    document.querySelector("#MobileNavContainer").classList.toggle("hidden");
+  }
+
+  function closeMenu() {
+    movileMenuSection.addEventListener("mouseover", () => {
+      document.querySelector("#MobileNavContainer").classList.remove("hidden");
+    });
+
+    movileMenuSection.addEventListener("mouseout", () => {
+      document.querySelector("#MobileNavContainer").classList.add("hidden");
+    });
+  }
 
   function ver(n) {
     document.getElementById("subseccion" + n).style.display = "block";
@@ -23,6 +39,14 @@
     ocultar(1);
   });
 
+  // Open Menu Movile
+  btnOpenMenu.addEventListener("click", () => {
+    switchHidden();
+  });
+
+  movileMenuSection.addEventListener("mouseout", () => {
+    closeMenu();
+  });
 </script>
 
 <!-- FOR MOBILE-->
@@ -38,7 +62,7 @@
         />
       </a>
     </div>
-    <button onclick="switchHidden()" id="switchButtom">
+    <button id="switchButtom">
       <i class="fas fa-2x fa-bars mr-3.5"></i>
     </button>
   </div>
@@ -51,10 +75,7 @@
         class="transition w-screen hover:bg-palette-three hover:text-white"
         href="">Home</a
       >
-      <li
-        class="cursor-pointer list-none"
-        id="btnSwitchMenu"
-      >
+      <li class="cursor-pointer list-none" id="btnSwitchMenu">
         Products
         <ul id="subseccion2" class="m-auto text-lg">
           <li>
@@ -123,7 +144,7 @@
         alt="US-UK-Flag"
       />
     </a>
-    <a href='de/home' class="hover:opacity-40">
+    <a href="de/home" class="hover:opacity-40">
       <img
         class="rounded-full border"
         src="/Flag-of-Germany.svg"
@@ -156,7 +177,7 @@
           href="/">Home</a
         >
       </li>
-      <li class="cursor-pointer"  id="btnExpandContent">
+      <li class="cursor-pointer" id="btnExpandContent">
         Products
         <ul id="subseccion1" class="text-left absolute hidden text-lg bg-white">
           <li>
