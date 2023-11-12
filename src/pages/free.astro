@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { MySwiper } from "../components/MySwiper";
 ---
 
 <Layout title="FruityEva-About">
@@ -15,49 +16,35 @@ import Layout from "../layouts/Layout.astro";
         </h3>
       </div>
 
-      <div class="w-3/4 max-w-md m-auto swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img
-              class="imgEbooks"
-              src="..//ebooks/English Erweiterte Version vom Meal plan/1.png"
-              alt="Ebook-Meal plan"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              class="imgEbooks"
-              src="..//ebooks/English Erweiterte Version vom Meal plan/3.png"
-              alt="Ebook-Meal plan"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              class="imgEbooks"
-              src="..//ebooks/English Erweiterte Version vom Meal plan/9.png"
-              alt="Ebook-Meal plan"
-            />
-          </div>
-
-          <div class="swiper-slide">
-            <img
-              class="imgEbooks"
-              src="..//ebooks/English Erweiterte Version vom Meal plan/49.png"
-              alt="Ebook-Meal plan"
-            />
-          </div>
-
-          <div class="swiper-slide">
-            <img
-              class="imgEbooks"
-              src="..//ebooks/English Erweiterte Version vom Meal plan/83.png"
-              alt="Ebook-Meal plan"
-            />
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
+      <MySwiper
+        slidesData={[
+          {
+            srcPath:
+              "..//ebooks/English Erweiterte Version vom Meal plan/1.png",
+            altDes: "Ebook-Meal plan",
+          },
+          {
+            srcPath:
+              "..//ebooks/English Erweiterte Version vom Meal plan/3.png",
+            altDes: "Ebook-Meal plan",
+          },
+          {
+            srcPath:
+              "..//ebooks/English Erweiterte Version vom Meal plan/9.png",
+            altDes: "Ebook-Meal plan",
+          },
+          {
+            srcPath:
+              "..//ebooks/English Erweiterte Version vom Meal plan/49.png",
+            altDes: "Ebook-Meal plan",
+          },
+          {
+            srcPath:
+              "..//ebooks/English Erweiterte Version vom Meal plan/83.png",
+            altDes: "Ebook-Meal plan",
+          },
+        ]}  client:load
+      />
 
       <div class="w-3/4 max-w-lg text-center m-auto mt-8">
         <!-- Begin Mailchimp Signup Form -->

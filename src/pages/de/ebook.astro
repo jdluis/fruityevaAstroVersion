@@ -1,11 +1,12 @@
 ---
 import LayoutDe from "../../layouts/Layout_de.astro";
+import { MySwiper } from "../../components/MySwiper";
 ---
 
-<LayoutDe title="Home">
+<LayoutDe title="Ebook">
   <!--Ebooks-->
   <div class="mt-32 xl:w-5/6 m-auto">
-    <h2 class="text-center font-bold font-textPrimary text-7xl mb-10 lg:mb-2">
+    <h2 class="text-center font-bold font-textPrimary text-7xl mb-10">
       Meine Ebooks
     </h2>
 
@@ -16,53 +17,35 @@ import LayoutDe from "../../layouts/Layout_de.astro";
         >
           <div class="w-full md:w-3/4 max-w-lg m-auto">
             <div class="text-center text-lg pb-5 pt-5 text-gray-600">
-              <h3 class="">Rohkost Smoothie Rezepte</h3>
+              <h3 class="text-xl lg:text-3xl sm:text-2xl w-full text-center pb-5 astro-W53KLJ2H">Rohkost Smoothie Rezepte</h3>
             </div>
           </div>
 
-          <div class="w-full md:w-3/4 max-w-md m-auto swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  class="imgEbooks"
-                  src="..//ebooks/2.0SmoothieRezepte/1.png"
-                  alt="Ebook-Smoothie Rezepte Raw Vegan"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  class="imgEbooks"
-                  src="..//ebooks/2.0SmoothieRezepte/3.png"
-                  alt="Ebook-Smoothie Rezepte Raw Vegan"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  class="imgEbooks"
-                  src="..//ebooks/2.0SmoothieRezepte/18.png"
-                  alt="Ebook-Smoothie Rezepte Raw Vegan"
-                />
-              </div>
-
-              <div class="swiper-slide">
-                <img
-                  class="imgEbooks"
-                  src="..//ebooks/2.0SmoothieRezepte/30.png"
-                  alt="Ebook-Smoothie Rezepte Raw Vegan"
-                />
-              </div>
-
-              <div class="swiper-slide">
-                <img
-                  class="imgEbooks"
-                  src="..//ebooks/2.0SmoothieRezepte/43.png"
-                  alt="Ebook-Smoothie Rezepte Raw Vegan"
-                />
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
+          <MySwiper slidesData={
+            [
+              {
+                srcPath:"..//ebooks/2.0SmoothieRezepte/1.png",
+                altDes:"Ebook-Smoothie Rezepte Raw Vegan"
+              },
+              {
+                srcPath:"..//ebooks/2.0SmoothieRezepte/3.png",
+                altDes:"Ebook-Smoothie Rezepte Raw Vegan"
+              },
+              {
+                srcPath:"..//ebooks/2.0SmoothieRezepte/18.png",
+                altDes:"Ebook-Smoothie Rezepte Raw Vegan"
+              },
+              {
+                srcPath:"..//ebooks/2.0SmoothieRezepte/30.png",
+                altDes:"Ebook-Smoothie Rezepte Raw Vegan"
+              },
+              {
+                srcPath:"..//ebooks/2.0SmoothieRezepte/43.png",
+                altDes:"Ebook-Smoothie Rezepte Raw Vegan"
+              },
+            ]
+          } />
+        
 
           <div class="w-full md:w-3/4 max-w-lg text-center m-auto mt-8">
             <a
@@ -78,65 +61,95 @@ import LayoutDe from "../../layouts/Layout_de.astro";
         </div>
       </section>
 
-      <section class="mt-32 mb-20 m-auto overflow-hidden">
+      <section class="mb-20 m-auto overflow-hidden">
         <div
           class="rounded overflow-hidden shadow-md relative pt-10 m-auto border-2 pb-10"
         >
           <div class="w-3/4 max-w-lg m-auto">
             <div class="text-center text-lg pt-5 pb-5 text-gray-600">
-              <h3>Leckerste Rohkost Rezepte</h3>
+              <h3 class="text-xl lg:text-3xl sm:text-2xl w-full text-center pb-5 astro-W53KLJ2H">Leckerste Rohkost Rezepte</h3>
             </div>
           </div>
 
-          <div class="w-3/4 max-w-md m-auto swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  class="imgEbooks"
-                  src="..//ebooks/Liebste Rohkost Rezepte/1.png"
-                  alt="Ebook-Favourite Raw Vegan Recipes"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  class="imgEbooks"
-                  src="..//ebooks/Liebste Rohkost Rezepte/3.png"
-                  alt="Ebook-Favourite Raw Vegan Recipes"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  class="imgEbooks"
-                  src="..//ebooks/Liebste Rohkost Rezepte/10.png"
-                  alt="Ebook-Favourite Raw Vegan Recipes"
-                />
-              </div>
-
-              <div class="swiper-slide">
-                <img
-                  class="imgEbooks"
-                  src="..//ebooks/Liebste Rohkost Rezepte/26.png"
-                  alt="Ebook-Favourite Raw Vegan Recipes"
-                />
-              </div>
-
-              <div class="swiper-slide">
-                <img
-                  class="imgEbooks"
-                  src="..//ebooks/Liebste Rohkost Rezepte/65.png"
-                  alt="Ebook-Favourite Raw Vegan Recipes"
-                />
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
+          <MySwiper slidesData={
+            [
+              {
+                srcPath:"..//ebooks/Liebste Rohkost Rezepte/1.png",
+                altDes:"Ebook-Favourite Raw Vegan Recipes"
+              },
+              {
+                srcPath:"..//ebooks/Liebste Rohkost Rezepte/3.png",
+                altDes:"Ebook-Favourite Raw Vegan Recipes"
+              },
+              {
+                srcPath:"..//ebooks/Liebste Rohkost Rezepte/10.png",
+                altDes:"Ebook-Favourite Raw Vegan Recipes"
+              },
+              {
+                srcPath:"..//ebooks/Liebste Rohkost Rezepte/26.png",
+                altDes:"Ebook-Favourite Raw Vegan Recipes"
+              },
+              {
+                srcPath:"..//ebooks/Liebste Rohkost Rezepte/65.png",
+                altDes:"Ebook-Favourite Raw Vegan Recipes"
+              },
+            ]
+          } />
 
           <div class="w-3/4 max-w-lg text-center m-auto mt-8">
             <a
               class="hover:opacity-80 bg-palette-four pr-5 pl-5 p-2 sm:pr-10 sm:pl-10 sm:p-5 shadow-2xl rounded-3xl border-2"
               target="_blank"
               href="https://payhip.com/b/3Ch9"
+            >
+              <button class="p-4 text-white font-bold text-3xl">
+                Get it Here!
+              </button></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-20 m-auto overflow-hidden">
+        <div
+          class="rounded overflow-hidden shadow-md relative pt-10 m-auto border-2 pb-10"
+        >
+          <div class="w-3/4 max-w-lg m-auto">
+            <div class="text-center text-lg pt-5 pb-5 text-gray-600">
+              <h3 class="text-xl lg:text-3xl sm:text-2xl w-full text-center pb-5 astro-W53KLJ2H">Gourmet Rohkost Rezepte</h3>
+            </div>
+          </div>
+
+          <MySwiper slidesData={
+            [
+              {
+                srcPath:"..//ebooks/GourmetRohkostRezepte/CoverGourmetRohkostRezepte.jpg",
+                altDes:"Ebook-Favourite Raw Vegan Recipes"
+              },
+              {
+                srcPath:"..//ebooks/GourmetRohkostRezepte/2.pageGourmetRohkostRezepte.jpg",
+                altDes:"Ebook-Favourite Raw Vegan Recipes"
+              },
+              {
+                srcPath:"..//ebooks/GourmetRohkostRezepte/3.pageGourmetRohkostRezepte.jpg",
+                altDes:"Ebook-Favourite Raw Vegan Recipes"
+              },
+              {
+                srcPath:"..//ebooks/GourmetRohkostRezepte/4.pageGourmetRohkostRezepte.jpg",
+                altDes:"Ebook-Favourite Raw Vegan Recipes"
+              },
+              {
+                srcPath:"..//ebooks/GourmetRohkostRezepte/5.pageGourmetRohkostRezepte.jpg",
+                altDes:"Ebook-Favourite Raw Vegan Recipes"
+              },
+            ]
+          } />
+
+          <div class="w-3/4 max-w-lg text-center m-auto mt-8">
+            <a
+              class="hover:opacity-80 bg-palette-four pr-5 pl-5 p-2 sm:pr-10 sm:pl-10 sm:p-5 shadow-2xl rounded-3xl border-2"
+              target="_blank"
+              href="https://payhip.com/b/QgoTX"
             >
               <button class="p-4 text-white font-bold text-3xl">
                 Get it Here!
