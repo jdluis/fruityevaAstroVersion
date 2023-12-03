@@ -45,8 +45,8 @@ module.exports = {
 			backgroundImage: {
 				'hero-home': "url('https://i.giphy.com/media/XEb90OzfzTduM/giphy.webp')",
 				'orange': "url(https://i.giphy.com/media/k7K48NJ7qlko8/giphy.webp)",
-				'home2section': "url(/bg2sec.jpg)",
-				'newssection': "url(/bgnews.jpg)",
+				'home2section': "url(/src/img/bg2sec.jpg)",
+				'newssection': "url(/src/img/bgnews.jpg)",
 			},
 		},
 	},

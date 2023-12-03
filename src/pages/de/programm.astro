@@ -1,6 +1,8 @@
 ---
 import LayoutDe from "../../layouts/Layout_de.astro";
 import { MySwiper } from "../../components/MySwiper";
+
+import pinneapleImg from "../../img/pinneaple.jpg";
 ---
 
 <LayoutDe title="Programme">
@@ -26,12 +28,8 @@ import { MySwiper } from "../../components/MySwiper";
             </div>
           </div>
           <MySwiper
-            slidesData={[
-              {
-                srcPath: "../pinneaple.jpg",
-                altDes: "pinneaple",
-              },
-            ]}
+            swiperName="pinneaple"
+            slidesData={[pinneapleImg]}
             client:load
           />
           <div class="w-3/4 max-w-lg text-center m-auto mt-8">

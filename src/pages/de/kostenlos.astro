@@ -1,5 +1,20 @@
 ---
+import { MySwiper } from "../../components/MySwiper";
 import LayoutDe from "../../layouts/Layout_de.astro";
+
+import kostenlosBook1 from "../../img/ebooks/Deutsch Erweiterte Version vom Meal plan/1.png";
+import kostenlosBook2 from "../../img/ebooks/Deutsch Erweiterte Version vom Meal plan/3.png";
+import kostenlosBook3 from "../../img/ebooks/Deutsch Erweiterte Version vom Meal plan/10.png";
+import kostenlosBook4 from "../../img/ebooks/Deutsch Erweiterte Version vom Meal plan/44.png";
+import kostenlosBook5 from "../../img/ebooks/Deutsch Erweiterte Version vom Meal plan/83.png";
+
+const kostenlosBookImgs = [
+  kostenlosBook1,
+  kostenlosBook2,
+  kostenlosBook3,
+  kostenlosBook4,
+  kostenlosBook5,
+];
 ---
 
 <LayoutDe title="Home">
@@ -14,49 +29,7 @@ import LayoutDe from "../../layouts/Layout_de.astro";
         </h3>
       </div>
 
-      <div class="w-3/4 max-w-md m-auto swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img
-              class="imgEbooks"
-              src="../ebooks/Deutsch Erweiterte Version vom Meal plan/1.png"
-              alt="Ebook-Meal plan"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              class="imgEbooks"
-              src="../ebooks/Deutsch Erweiterte Version vom Meal plan/3.png"
-              alt="Ebook-Meal plan"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              class="imgEbooks"
-              src="../ebooks/Deutsch Erweiterte Version vom Meal plan/10.png"
-              alt="Ebook-Meal plan"
-            />
-          </div>
-
-          <div class="swiper-slide">
-            <img
-              class="imgEbooks"
-              src="../ebooks/Deutsch Erweiterte Version vom Meal plan/44.png"
-              alt="Ebook-Meal plan"
-            />
-          </div>
-
-          <div class="swiper-slide">
-            <img
-              class="imgEbooks"
-              src="../ebooks/Deutsch Erweiterte Version vom Meal plan/83.png"
-              alt="Ebook-Meal plan"
-            />
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
+      <MySwiper swiperName="Ebook-Meal plan" slidesData={[...kostenlosBookImgs]} />
 
       <div class="w-3/4 max-w-lg text-center m-auto mt-8">
         <!-- Begin Mailchimp Signup Form -->

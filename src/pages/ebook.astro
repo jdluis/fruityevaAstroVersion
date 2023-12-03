@@ -1,6 +1,34 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { MySwiper } from "../components/MySwiper.jsx";
+
+import smoothie1 from "../img/ebooks/2.0SmoothieRecipeRawVegan/1.png";
+import smoothie2 from "../img/ebooks/2.0SmoothieRecipeRawVegan/3.png";
+import smoothie3 from "../img/ebooks/2.0SmoothieRecipeRawVegan/5.png";
+import smoothie4 from "../img/ebooks/2.0SmoothieRecipeRawVegan/18.png";
+import smoothie5 from "../img/ebooks/2.0SmoothieRecipeRawVegan/32.png";
+
+import favoriteRaw1 from "../img/ebooks/Favourite Raw Vegan Recipes/1.png";
+import favoriteRaw2 from "../img/ebooks/Favourite Raw Vegan Recipes/2.png";
+import favoriteRaw3 from "../img/ebooks/Favourite Raw Vegan Recipes/12.png";
+import favoriteRaw4 from "../img/ebooks/Favourite Raw Vegan Recipes/28.png";
+import favoriteRaw5 from "../img/ebooks/Favourite Raw Vegan Recipes/61.png";
+
+import gourmet1 from "../img/ebooks/GourmetRawVeganRecipes/CoverGourmetRawVeganRecipes.jpg";
+import gourmet2 from "../img/ebooks/GourmetRawVeganRecipes/2.pageGourmetRawVeganRecipe.jpg";
+import gourmet3 from "../img/ebooks/GourmetRawVeganRecipes/3.pageGourmetRawVeganRecipe.jpg";
+import gourmet4 from "../img/ebooks/GourmetRawVeganRecipes/4.pictureGourmetRawVeganRecipe.jpg";
+import gourmet5 from "../img/ebooks/GourmetRawVeganRecipes/5.pictureGourmetRawVeganRecipe.jpg";
+
+const smoothieBookImgs = [
+  smoothie1,
+  smoothie2,
+  smoothie3,
+  smoothie4,
+  smoothie5,
+];
+const favouriteRecipesImgs = [favoriteRaw1, favoriteRaw2, favoriteRaw3, favoriteRaw4, favoriteRaw5];
+const gourmetBookImgs = [gourmet1, gourmet2, gourmet3, gourmet4, gourmet5];
 ---
 
 <Layout title="Ebooks">
@@ -17,32 +45,16 @@ import { MySwiper } from "../components/MySwiper.jsx";
         >
           <div class="w-full md:w-3/4 max-w-lg m-auto">
             <div class="text-center text-lg pb-5 pt-5 text-gray-600">
-              <h3 class="text-xl lg:text-3xl sm:text-2xl w-full text-center pb-5 astro-W53KLJ2H">Raw Vegan Smoothie Recipes</h3>
+              <h3
+                class="text-xl lg:text-3xl sm:text-2xl w-full text-center pb-5 astro-W53KLJ2H"
+              >
+                Raw Vegan Smoothie Recipes
+              </h3>
             </div>
           </div>
           <MySwiper
-            slidesData={[
-              {
-                srcPath: "ebooks/Favourite Raw Vegan Recipes/1.png",
-                altDes: "Ebook-Favourite Raw Vegan Recipes",
-              },
-              {
-                srcPath: "ebooks/Favourite Raw Vegan Recipes/2.png",
-                altDes: "Ebook-Favourite Raw Vegan Recipes",
-              },
-              {
-                srcPath: "ebooks/Favourite Raw Vegan Recipes/12.png",
-                altDes: "Ebook-Favourite Raw Vegan Recipes",
-              },
-              {
-                srcPath: "ebooks/Favourite Raw Vegan Recipes/28.png",
-                altDes: "Ebook-Favourite Raw Vegan Recipes",
-              },
-              {
-                srcPath: "ebooks/Favourite Raw Vegan Recipes/65.png",
-                altDes: "Ebook-Favourite Raw Vegan Recipes",
-              },
-            ]}
+            swiperName="Ebook-Favourite Raw Vegan Recipes"
+            slidesData={smoothieBookImgs}
             client:load
           />
           <div class="w-full md:w-3/4 max-w-lg text-center m-auto mt-8">
@@ -65,32 +77,16 @@ import { MySwiper } from "../components/MySwiper.jsx";
         >
           <div class="w-3/4 max-w-lg m-auto">
             <div class="text-center text-lg pt-5 pb-5 text-gray-600">
-              <h3 class="text-xl lg:text-3xl sm:text-2xl w-full text-center pb-5 astro-W53KLJ2H">Favourite Raw Vegan Recipes</h3>
+              <h3
+                class="text-xl lg:text-3xl sm:text-2xl w-full text-center pb-5 astro-W53KLJ2H"
+              >
+                Favourite Raw Vegan Recipes
+              </h3>
             </div>
           </div>
           <MySwiper
-            slidesData={[
-              {
-                srcPath: "ebooks/2.0SmoothieRecipeRawVegan/1.png",
-                altDes: "Ebook-Smoothie Recipe Raw Vegan",
-              },
-              {
-                srcPath: "ebooks/2.0SmoothieRecipeRawVegan/3.png",
-                altDes: "Ebook-Smoothie Recipe Raw Vegan",
-              },
-              {
-                srcPath: "ebooks/2.0SmoothieRecipeRawVegan/18.png",
-                altDes: "Ebook-Smoothie Recipe Raw Vegan",
-              },
-              {
-                srcPath: "ebooks/2.0SmoothieRecipeRawVegan/32.png",
-                altDes: "Ebook-Smoothie Recipe Raw Vegan",
-              },
-              {
-                srcPath: "ebooks/2.0SmoothieRecipeRawVegan/43.png",
-                altDes: "Ebook-Smoothie Recipe Raw Vegan",
-              },
-            ]}
+            swiperName="Ebook-Smoothie Recipe Raw Vegan"
+            slidesData={favouriteRecipesImgs}
             client:load
           />
           <div class="w-3/4 max-w-lg text-center m-auto mt-8">
@@ -113,32 +109,15 @@ import { MySwiper } from "../components/MySwiper.jsx";
         >
           <div class="w-3/4 max-w-lg m-auto">
             <div class="text-center text-lg pt-5 pb-5 text-gray-600">
-              <h3 class="text-xl lg:text-3xl sm:text-2xl w-full text-center pb-5 astro-W53KLJ2H">Gourmet Raw Vegan Recipes</h3>
+              <h3
+                class="text-xl lg:text-3xl sm:text-2xl w-full text-center pb-5 astro-W53KLJ2H"
+              >
+                Gourmet Raw Vegan Recipes
+              </h3>
             </div>
           </div>
           <MySwiper
-            slidesData={[
-              {
-                srcPath: "ebooks/GourmetRawVeganRecipes/CoverGourmetRawVeganRecipes.jpg",
-                altDes: "Gourmet Raw Vegan Recipes",
-              },
-              {
-                srcPath: "ebooks/GourmetRawVeganRecipes/2.pageGourmetRawVeganRecipe.jpg",
-                altDes: "Gourmet Raw Vegan Recipes",
-              },
-              {
-                srcPath: "ebooks/GourmetRawVeganRecipes/3.pageGourmetRawVeganRecipe.jpg",
-                altDes: "Gourmet Raw Vegan Recipes",
-              },
-              {
-                srcPath: "ebooks/GourmetRawVeganRecipes/4.pictureGourmetRawVeganRecipe.jpg",
-                altDes: "Gourmet Raw Vegan Recipes",
-              },
-              {
-                srcPath: "ebooks/GourmetRawVeganRecipes/5.pictureGourmetRawVeganRecipe.jpg",
-                altDes: "Gourmet Raw Vegan Recipes",
-              },
-            ]}
+            slidesData={gourmetBookImgs}
             client:load
           />
           <div class="w-3/4 max-w-lg text-center m-auto mt-8">

@@ -1,6 +1,34 @@
 ---
 import LayoutDe from "../../layouts/Layout_de.astro";
 import { MySwiper } from "../../components/MySwiper";
+
+import smoothie1 from "../../img/ebooks/2.0SmoothieRezepte/1.png";
+import smoothie2 from "../../img/ebooks/2.0SmoothieRezepte/3.png";
+import smoothie3 from "../../img/ebooks/2.0SmoothieRezepte/5.png";
+import smoothie4 from "../../img/ebooks/2.0SmoothieRezepte/18.png";
+import smoothie5 from "../../img/ebooks/2.0SmoothieRezepte/30.png";
+
+import liebste1 from "../../img/ebooks/Liebste Rohkost Rezepte/1.png";
+import liebste2 from "../../img/ebooks/Liebste Rohkost Rezepte/3.png";
+import liebste3 from "../../img/ebooks/Liebste Rohkost Rezepte/10.png";
+import liebste4 from "../../img/ebooks/Liebste Rohkost Rezepte/26.png";
+import liebste5 from "../../img/ebooks/Liebste Rohkost Rezepte/49.png";
+
+import gourmet1 from "../../img/ebooks/GourmetRohkostRezepte/CoverGourmetRohkostRezepte.jpg";
+import gourmet2 from "../../img/ebooks/GourmetRohkostRezepte/2.pageGourmetRohkostRezepte.jpg";
+import gourmet3 from "../../img/ebooks/GourmetRohkostRezepte/3.pageGourmetRohkostRezepte.jpg";
+import gourmet4 from "../../img/ebooks/GourmetRohkostRezepte/4.pageGourmetRohkostRezepte.jpg";
+import gourmet5 from "../../img/ebooks/GourmetRohkostRezepte/5.pageGourmetRohkostRezepte.jpg";
+
+const gourmetBookImgs = [gourmet1, gourmet2, gourmet3, gourmet4, gourmet5];
+const smoothieBookImgs = [
+  smoothie1,
+  smoothie2,
+  smoothie3,
+  smoothie4,
+  smoothie5,
+];
+const liebsteRohkosImgs = [liebste1, liebste2, liebste3, liebste4, liebste5];
 ---
 
 <LayoutDe title="Ebook">
@@ -17,35 +45,18 @@ import { MySwiper } from "../../components/MySwiper";
         >
           <div class="w-full md:w-3/4 max-w-lg m-auto">
             <div class="text-center text-lg pb-5 pt-5 text-gray-600">
-              <h3 class="text-xl lg:text-3xl sm:text-2xl w-full text-center pb-5 astro-W53KLJ2H">Rohkost Smoothie Rezepte</h3>
+              <h3
+                class="text-xl lg:text-3xl sm:text-2xl w-full text-center pb-5 astro-W53KLJ2H"
+              >
+                Rohkost Smoothie Rezepte
+              </h3>
             </div>
           </div>
 
-          <MySwiper slidesData={
-            [
-              {
-                srcPath:"../ebooks/2.0SmoothieRezepte/1.png",
-                altDes:"Ebook-Smoothie Rezepte Raw Vegan"
-              },
-              {
-                srcPath:"../ebooks/2.0SmoothieRezepte/3.png",
-                altDes:"Ebook-Smoothie Rezepte Raw Vegan"
-              },
-              {
-                srcPath:"../ebooks/2.0SmoothieRezepte/18.png",
-                altDes:"Ebook-Smoothie Rezepte Raw Vegan"
-              },
-              {
-                srcPath:"../ebooks/2.0SmoothieRezepte/30.png",
-                altDes:"Ebook-Smoothie Rezepte Raw Vegan"
-              },
-              {
-                srcPath:"../ebooks/2.0SmoothieRezepte/43.png",
-                altDes:"Ebook-Smoothie Rezepte Raw Vegan"
-              },
-            ]
-          } />
-        
+          <MySwiper
+            swiperName="Ebook-Smoothie Rezepte Raw Vegan"
+            slidesData={[...smoothieBookImgs]}
+          />
 
           <div class="w-full md:w-3/4 max-w-lg text-center m-auto mt-8">
             <a
@@ -67,34 +78,18 @@ import { MySwiper } from "../../components/MySwiper";
         >
           <div class="w-3/4 max-w-lg m-auto">
             <div class="text-center text-lg pt-5 pb-5 text-gray-600">
-              <h3 class="text-xl lg:text-3xl sm:text-2xl w-full text-center pb-5 astro-W53KLJ2H">Leckerste Rohkost Rezepte</h3>
+              <h3
+                class="text-xl lg:text-3xl sm:text-2xl w-full text-center pb-5 astro-W53KLJ2H"
+              >
+                Leckerste Rohkost Rezepte
+              </h3>
             </div>
           </div>
 
-          <MySwiper slidesData={
-            [
-              {
-                srcPath:"../ebooks/Liebste Rohkost Rezepte/1.png",
-                altDes:"Ebook-Favourite Raw Vegan Recipes"
-              },
-              {
-                srcPath:"../ebooks/Liebste Rohkost Rezepte/3.png",
-                altDes:"Ebook-Favourite Raw Vegan Recipes"
-              },
-              {
-                srcPath:"../ebooks/Liebste Rohkost Rezepte/10.png",
-                altDes:"Ebook-Favourite Raw Vegan Recipes"
-              },
-              {
-                srcPath:"../ebooks/Liebste Rohkost Rezepte/26.png",
-                altDes:"Ebook-Favourite Raw Vegan Recipes"
-              },
-              {
-                srcPath:"../ebooks/Liebste Rohkost Rezepte/65.png",
-                altDes:"Ebook-Favourite Raw Vegan Recipes"
-              },
-            ]
-          } />
+          <MySwiper
+            swiperName="Liebste Rohkost Rezeptes"
+            slidesData={[...liebsteRohkosImgs]}
+          />
 
           <div class="w-3/4 max-w-lg text-center m-auto mt-8">
             <a
@@ -116,34 +111,18 @@ import { MySwiper } from "../../components/MySwiper";
         >
           <div class="w-3/4 max-w-lg m-auto">
             <div class="text-center text-lg pt-5 pb-5 text-gray-600">
-              <h3 class="text-xl lg:text-3xl sm:text-2xl w-full text-center pb-5 astro-W53KLJ2H">Gourmet Rohkost Rezepte</h3>
+              <h3
+                class="text-xl lg:text-3xl sm:text-2xl w-full text-center pb-5 astro-W53KLJ2H"
+              >
+                Gourmet Rohkost Rezepte
+              </h3>
             </div>
           </div>
 
-          <MySwiper slidesData={
-            [
-              {
-                srcPath:"../ebooks/GourmetRohkostRezepte/CoverGourmetRohkostRezepte.jpg",
-                altDes:"Ebook-Favourite Raw Vegan Recipes"
-              },
-              {
-                srcPath:"../ebooks/GourmetRohkostRezepte/2.pageGourmetRohkostRezepte.jpg",
-                altDes:"Ebook-Favourite Raw Vegan Recipes"
-              },
-              {
-                srcPath:"../ebooks/GourmetRohkostRezepte/3.pageGourmetRohkostRezepte.jpg",
-                altDes:"Ebook-Favourite Raw Vegan Recipes"
-              },
-              {
-                srcPath:"../ebooks/GourmetRohkostRezepte/4.pageGourmetRohkostRezepte.jpg",
-                altDes:"Ebook-Favourite Raw Vegan Recipes"
-              },
-              {
-                srcPath:"../ebooks/GourmetRohkostRezepte/5.pageGourmetRohkostRezepte.jpg",
-                altDes:"Ebook-Favourite Raw Vegan Recipes"
-              },
-            ]
-          } />
+          <MySwiper
+            swiperName="Gourmet Rohkost Rezepte"
+            slidesData={[...gourmetBookImgs]}
+          />
 
           <div class="w-3/4 max-w-lg text-center m-auto mt-8">
             <a

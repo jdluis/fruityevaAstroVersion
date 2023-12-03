@@ -1,6 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { MySwiper } from "../components/MySwiper";
+
+import freeBook1 from "../img/ebooks/English Erweiterte Version vom Meal plan/1.png";
+import freeBook2 from "../img/ebooks/English Erweiterte Version vom Meal plan/3.png";
+import freeBook3 from "../img/ebooks/English Erweiterte Version vom Meal plan/13.png";
+import freeBook4 from "../img/ebooks/English Erweiterte Version vom Meal plan/49.png";
+import freeBook5 from "../img/ebooks/English Erweiterte Version vom Meal plan/83.png";
+
+const freeRecipes = [
+  freeBook1,
+  freeBook2,
+  freeBook3,
+  freeBook4,
+  freeBook5,
+];
 ---
 
 <Layout title="FruityEva-About">
@@ -17,33 +31,9 @@ import { MySwiper } from "../components/MySwiper";
       </div>
 
       <MySwiper
-        slidesData={[
-          {
-            srcPath:
-              "ebooks/English Erweiterte Version vom Meal plan/1.png",
-            altDes: "Ebook-Meal plan",
-          },
-          {
-            srcPath:
-              "ebooks/English Erweiterte Version vom Meal plan/3.png",
-            altDes: "Ebook-Meal plan",
-          },
-          {
-            srcPath:
-              "ebooks/English Erweiterte Version vom Meal plan/9.png",
-            altDes: "Ebook-Meal plan",
-          },
-          {
-            srcPath:
-              "ebooks/English Erweiterte Version vom Meal plan/49.png",
-            altDes: "Ebook-Meal plan",
-          },
-          {
-            srcPath:
-              "ebooks/English Erweiterte Version vom Meal plan/83.png",
-            altDes: "Ebook-Meal plan",
-          },
-        ]}  client:load
+        swiperName="Ebook-Meal plan"
+        slidesData={freeRecipes}
+        client:load
       />
 
       <div class="w-3/4 max-w-lg text-center m-auto mt-8">

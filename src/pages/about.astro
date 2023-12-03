@@ -1,6 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
+import authorImg1 from "../img/author/nice.jpg"
+import authorImg2 from "../img/author/evacomputer.jpg"
+import papayaImg from "../img/aboutFruit.jpeg"
 ---
 
 <Layout title="FruityEva-About">
@@ -11,7 +14,7 @@ import Layout from "../layouts/Layout.astro";
       <div class="m-10 ml-auto h-auto mr-auto w-4/6 sm:w-3/6 mt-32">
         <img
           class="w-full m-auto border shadow-2xl"
-          src="author/nice.jpg"
+          src={authorImg1}
           alt="FruityEva"
         />
       </div>
@@ -89,7 +92,7 @@ import Layout from "../layouts/Layout.astro";
       <div class="lg:m-5 m-auto w-full sm:w-3/6 lg:w-4/6 border-2 shadow-2xl">
         <img
           class="w-full"
-          src="author/evacomputer.jpg"
+          src={authorImg2}
           alt="FruityEva"
         />
       </div>
@@ -105,7 +108,7 @@ import Layout from "../layouts/Layout.astro";
       <div class="hidden lg:block m-auto lg:w-5/6 text-center p-5 self-end">
         <img
           class="border-2 shadow-2xl w-full"
-          src="aboutFruit.jpeg"
+          src={papayaImg}
           alt="Papaya Fruit"
         />
       </div>
