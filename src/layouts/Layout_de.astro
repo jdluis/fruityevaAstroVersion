@@ -30,7 +30,7 @@ const { title } = Astro.props;
     <link rel="icon" href="..//favicon.ico" type="image/x-icon" />
 
     <!--Styles-->
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="/src/style.css" />
 
     <script
       src="https://kit.fontawesome.com/3ffbeed2f4.js"
@@ -66,26 +66,4 @@ const { title } = Astro.props;
     <slot />
     <FooterDe />
   </body>
-
-  <script is:inline src="/utils/navdrop.js"></script>
-  <script is:inline src="/utils/showNav.js"></script>
-  <script is:inline src="/utils/smoothScroll.js"></script>
-  <script is:inline src="/utils/textAnimate.js"></script>
-
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    // import Swiper JS
-    import Swiper from "swiper";
-    // import Swiper styles
-    import "swiper/css";
-    var swiper = new Swiper(".mySwiper", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-
-  <!--SCRIPTS, JS---finish-->
 </html>
